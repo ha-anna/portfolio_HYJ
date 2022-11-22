@@ -4,7 +4,8 @@
   --text: #666666;
   --bg: #F0F0F0;
   --text-header: #121212;
-  --text-hover: #fb94bc;
+  --link: #121212;
+  --link-hover: #fb94bc;
 }
 
 body {
@@ -14,6 +15,10 @@ body {
   color: var(--text);
 }
 
+#root {
+  display: flex;
+}
+
 h1,
 h2,
 h3,
@@ -21,4 +26,38 @@ h4,
 h5,
 h6 {
   color: var(--text-header);
+}
+
+main {
+  width: calc(100vw - 210px);
+}
+
+header {
+  max-width: 210px;
+  width: 100%;
+}
+
+a {
+  color: var(--link);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.logo {
+  max-width: 180px;
+}
+
+header {
+  padding: 2rem 0 0 2rem;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li .icon {
+  display: inline;
+  float: left;
+  transform: scale(0.6)
 }
