@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz@1,6..96&family=Noto+Sans+KR:wght@300&family=Noto+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap');
+
+:root{
+  --text: #666666;
+  --bg: #F0F0F0;
+  --text-header: #121212;
+  --text-hover: #fb94bc;
+}
+
+body {
+  font-family: 'Noto Sans', 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  background: var(--bg);
+  color: var(--text);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-header);
+}
