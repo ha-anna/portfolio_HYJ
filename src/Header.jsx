@@ -2,6 +2,19 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function Header() {
+  function toggle(event) {
+    const panel = event.target.firstElementChild;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+      panel.style.padding = 0;
+      panel.style.opacity = 0;
+    } else {
+      panel.style.opacity = 1;
+      panel.style.maxHeight = panel.scrollHeight + 100 + "px";
+      panel.style.padding = "0.5rem 0 0.7rem 1rem";
+    }
+  }
+
   return (
     <header>
       <Link to="/">
@@ -10,31 +23,114 @@ function Header() {
       <nav>
         <ul>
           <li>
-            <Link to="/overview">Overview</Link>
+            <Link to="/overview" className="nav-link">
+              Overview
+            </Link>
+          </li>
+          <li
+            to="/project"
+            className="accordion nav-link"
+            onClick={() => toggle(event)}
+          >
+            Project
+            <ul className="nested panel">
+              <li>
+                <Link to="/new-galateia" className="nav-link">
+                  [New Galateia]
+                </Link>
+              </li>
+              <li>
+                <Link to="/kolorowa" className="nav-link">
+                  [Kolorowa]
+                </Link>
+              </li>
+              <li>
+                <Link to="/minus" className="nav-link">
+                  [Minus]
+                </Link>
+              </li>
+              <li>
+                <Link to="/concrete" className="nav-link">
+                  [Concrete]
+                </Link>
+              </li>
+              <li>
+                <Link to="/err0r" className="nav-link">
+                  [Err0r]
+                </Link>
+              </li>
+              <li>
+                <Link to="/living-and-gone" className="nav-link">
+                  [Living and gone]
+                </Link>
+              </li>
+            </ul>
+          </li>
+          <li className="accordion nav-link" onClick={() => toggle(event)}>
+            Reportage
+            <ul className="nested panel">
+              <li>
+                <Link to="/neoliberalism" className="nav-link">
+                  [Neo-liberalism]
+                </Link>
+              </li>
+              <li>
+                <Link to="/lgbtq-in-warsaw" className="nav-link">
+                  [LGBTQ in Warsaw]
+                </Link>
+              </li>
+              <li>
+                <Link to="/8-1-uprising" className="nav-link">
+                  [8/1 Uprising]
+                </Link>
+              </li>
+              <li>
+                <Link to="/independence-day" className="nav-link">
+                  [Independence day]
+                </Link>
+              </li>
+              <li>
+                <Link to="/dont-look-back-in-anger" className="nav-link">
+                  [Don't look back in anger]
+                </Link>
+              </li>
+              <li>
+                <Link to="/issues" className="nav-link">
+                  [Issues]
+                </Link>
+              </li>
+            </ul>
           </li>
           <li>
-            <Link to="/project">Project</Link>
+            <Link to="/film" className="nav-link">
+              Film
+            </Link>
           </li>
           <li>
-            <Link to="/reportage">Reportage</Link>
+            <Link to="/commissioned" className="nav-link">
+              Commissioned
+            </Link>
           </li>
           <li>
-            <Link to="/film">Film</Link>
+            <Link to="/exhibition" className="nav-link italic first">
+              Exhibition
+            </Link>
           </li>
           <li>
-            <Link to="/commissioned">Commissioned</Link>
+            <Link to="/about" className="nav-link italic">
+              About
+            </Link>
           </li>
           <li>
-            <Link to="/exhibition">Exhibition</Link>
+            <Link to="/contact" className="nav-link italic last">
+              Contact
+            </Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-          <li>
-            <Link to="https://www.facebook.com/youjun.ha" className="icon">
+            <Link
+              to="https://www.facebook.com/youjun.ha"
+              className="icon nav-link"
+            >
               <svg width="32" height="32" viewBox="0 0 24 24">
                 <path
                   fill="currentColor"
@@ -46,9 +142,9 @@ function Header() {
           <li>
             <Link
               to="https://www.instagram.com/studio_siseon/"
-              className="icon"
+              className="icon nav-link"
             >
-              <svg width="32" height="32" viewBox="0 0 24 24">
+              <svg width="32" height="34" viewBox="0 0 24 24">
                 <path
                   fill="currentColor"
                   fill-rule="evenodd"
