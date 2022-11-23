@@ -27,11 +27,7 @@ function Header() {
               Overview
             </Link>
           </li>
-          <li
-            to="/project"
-            className="accordion nav-link"
-            onClick={() => toggle(event)}
-          >
+          <li className="accordion nav-link" onClick={() => toggle(event)}>
             Project
             <ul className="nested panel">
               <li>
