@@ -3,7 +3,7 @@ import React from "react";
 function Home() {
   return (
     <>
-      <h2>Kolorowa Warszawa</h2>
+      <h2>Index page</h2>
     </>
   );
 }
