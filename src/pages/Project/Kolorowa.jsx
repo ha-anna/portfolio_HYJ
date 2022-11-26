@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Modal from "react-modal";
 
 function Kolorowa() {
   const [isOpen, setIsOpen] = useState(false);
