@@ -20,7 +20,46 @@ function Header() {
       <Link to="/">
         <img src="./assets/logo.webp" alt="" className="logo" />
       </Link>
-      <nav>
+
+      <svg className="menu-button" width="32" height="32" viewBox="0 0 24 24">
+        <g
+          fill="none"
+          stroke="currentColor"
+          stroke-dasharray="24"
+          stroke-dashoffset="24"
+          stroke-linecap="round"
+          stroke-width="2"
+        >
+          <path d="M5 5H19">
+            <animate
+              fill="freeze"
+              attributeName="stroke-dashoffset"
+              dur="0.2s"
+              values="24;0"
+            />
+          </path>
+          <path d="M5 12H19">
+            <animate
+              fill="freeze"
+              attributeName="stroke-dashoffset"
+              begin="0.2s"
+              dur="0.2s"
+              values="24;0"
+            />
+          </path>
+          <path d="M5 19H19">
+            <animate
+              fill="freeze"
+              attributeName="stroke-dashoffset"
+              begin="0.4s"
+              dur="0.2s"
+              values="24;0"
+            />
+          </path>
+        </g>
+      </svg>
+
+      <nav className="top-nav">
         <ul>
           <li>
             <Link to="/overview" className="nav-link">
