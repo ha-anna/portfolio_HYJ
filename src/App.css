@@ -28,8 +28,9 @@ body {
 }
 
 main {
-  width: calc(100vw - 200px);
-  padding: 2rem 4rem;
+  /* width: calc(100vw - 200px); */
+  /* padding: 2rem 4rem; */
+  max-width: 100%;
 }
 
 header {
@@ -100,6 +101,7 @@ li .icon {
 }
 
 .panel {
+  list-style: none;
   max-height: 0;
   overflow: hidden;
   transition: all 400ms ease-out;
@@ -167,11 +169,12 @@ li .icon {
 .img-grid {
   column-count: 1;
   column-gap:20px;
-  width: auto;
+  padding: 1rem;
 }
 
 .img-grid img {
   transition: opacity 0.25s ease-in-out;
+  max-width: 100%;
   width: 100%;
   margin-bottom: 15px;
   cursor: pointer;
@@ -184,7 +187,35 @@ li .icon {
 @media only screen and (min-width: 768px) {
   #root {
     flex-flow: row nowrap;
+    align-items: flex-start;
   }
+  header {
+    max-width: 200px;
+    margin-right: 3rem;
+  }
+
+  .logo {
+    max-width: 200px;
+  }
+
+  .mobile-toggle {
+    display: none;
+  }
+
+  .collapse-menu {
+    max-height: max-content;
+    opacity: 1;
+    overflow: visible;
+    text-align: left;
+    padding: 0;
+  }
+
+  li .icon {
+  float: left;
+  transform: scale(0.6);
+  translate: -20px;
+}
+
 }
 
 @media (min-width:1000px){

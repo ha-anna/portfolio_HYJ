@@ -19,8 +19,6 @@ function Header() {
     const menu = document.querySelector(".collapse-menu");
     if (menu.style.maxHeight) {
       menu.style.maxHeight = null;
-      // menu.style.borderBottom = "none";
-      // menu.style.borderTop = "none";
       menu.style.opacity = "0";
     } else {
       menu.style.maxHeight = menu.scrollHeight + 500 + "px";
@@ -48,7 +46,7 @@ function Header() {
           aria-label="Toggle navigation"
           onClick={toggleMobileMenu}
         >
-          <svg width="48px" height="48px" viewBox="0 0 24 24">
+          <svg width="45px" height="45px" viewBox="0 0 24 24">
             <g
               fill="none"
               stroke="#121212"
