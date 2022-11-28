@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function Header() {
-  function toggle(event) {
+  function toggleLink(event) {
     const panel = event.target.firstElementChild;
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
@@ -15,58 +15,85 @@ function Header() {
     }
   }
 
+  function toggleMobileMenu() {
+    const menu = document.querySelector(".collapse-menu");
+    if (menu.style.maxHeight) {
+      menu.style.maxHeight = null;
+      // menu.style.borderBottom = "none";
+      // menu.style.borderTop = "none";
+      menu.style.opacity = "0";
+    } else {
+      menu.style.maxHeight = menu.scrollHeight + 500 + "px";
+      menu.style.borderBottom = "2px solid var(--text)";
+      menu.style.borderTop = "2px solid var(--text)";
+      menu.style.padding = "1rem 0";
+      menu.style.opacity = "1";
+    }
+  }
+
   return (
     <header>
-      <Link to="/">
-        <img src="./assets/logo.webp" alt="" className="logo" />
-      </Link>
+      <nav className="mobile-nav">
+        <Link to="/">
+          <img src="./assets/logo.webp" alt="" className="logo" />
+        </Link>
 
-      <svg className="menu-button" width="32" height="32" viewBox="0 0 24 24">
-        <g
-          fill="none"
-          stroke="currentColor"
-          stroke-dasharray="24"
-          stroke-dashoffset="24"
-          stroke-linecap="round"
-          stroke-width="2"
+        <button
+          className="mobile-toggle"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          onClick={toggleMobileMenu}
         >
-          <path d="M5 5H19">
-            <animate
-              fill="freeze"
-              attributeName="stroke-dashoffset"
-              dur="0.2s"
-              values="24;0"
-            />
-          </path>
-          <path d="M5 12H19">
-            <animate
-              fill="freeze"
-              attributeName="stroke-dashoffset"
-              begin="0.2s"
-              dur="0.2s"
-              values="24;0"
-            />
-          </path>
-          <path d="M5 19H19">
-            <animate
-              fill="freeze"
-              attributeName="stroke-dashoffset"
-              begin="0.4s"
-              dur="0.2s"
-              values="24;0"
-            />
-          </path>
-        </g>
-      </svg>
+          <svg width="48px" height="48px" viewBox="0 0 24 24">
+            <g
+              fill="none"
+              stroke="#121212"
+              strokeDasharray="24"
+              strokeDashoffset="24"
+              strokeLinecap="round"
+              strokeWidth="2"
+            >
+              <path d="M5 5H19">
+                <animate
+                  fill="freeze"
+                  attributeName="stroke-dashoffset"
+                  dur="0.2s"
+                  values="24;0"
+                ></animate>
+              </path>
+              <path d="M5 12H19">
+                <animate
+                  fill="freeze"
+                  attributeName="stroke-dashoffset"
+                  begin="0.2s"
+                  dur="0.2s"
+                  values="24;0"
+                ></animate>
+              </path>
+              <path d="M5 19H19">
+                <animate
+                  fill="freeze"
+                  attributeName="stroke-dashoffset"
+                  begin="0.4s"
+                  dur="0.2s"
+                  values="24;0"
+                ></animate>
+              </path>
+            </g>
+          </svg>
+        </button>
 
-      <nav className="top-nav">
-        <ul>
+        <ul className="collapse-menu collapse">
           <li>
             <Link to="/overview" className="nav-link">
               Overview
             </Link>
           </li>
-          <li className="accordion nav-link" onClick={() => toggle(event)}>
+          <li className="accordion nav-link" onClick={() => toggleLink(event)}>
             Project
             <ul className="nested panel">
               <li>
@@ -101,7 +128,7 @@ function Header() {
               </li>
             </ul>
           </li>
-          <li className="accordion nav-link" onClick={() => toggle(event)}>
+          <li className="accordion nav-link" onClick={() => toggleLink(event)}>
             Reportage
             <ul className="nested panel">
               <li>
@@ -191,6 +218,14 @@ function Header() {
           </li>
         </ul>
       </nav>
+
+      {/* <nav className="top-nav">
+        <Link to="/">
+          <img src="./assets/logo.webp" alt="" className="logo" />
+        </Link>
+
+
+      </nav> */}
     </header>
   );
 }

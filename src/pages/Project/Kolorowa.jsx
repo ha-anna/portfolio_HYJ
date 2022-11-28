@@ -11,8 +11,13 @@ function Kolorowa() {
   }
 
   const images = Object.keys(import.meta.glob("./kolorowa/*", { as: "raw" }));
-  const imagesHtml = images.map((url) => (
-    <img src={`./assets/${url.slice(2)}`} alt="" onClick={toggleModal} />
+  const imagesHtml = images.map((url, i) => (
+    <img
+      src={`./assets/${url.slice(2)}`}
+      alt=""
+      onClick={toggleModal}
+      key={i}
+    />
   ));
 
   return (
