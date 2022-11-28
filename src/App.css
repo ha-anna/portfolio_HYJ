@@ -170,7 +170,7 @@ li .icon {
 .img-grid {
   column-count: 1;
   column-gap:20px;
-  padding: 0 1rem 1rem 1rem;
+  padding: 1rem;
 }
 
 .img-grid img {
