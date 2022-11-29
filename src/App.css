@@ -29,6 +29,7 @@ body {
 
 main {
   max-width: 100%;
+  padding: 2rem;
 }
 
 header {
@@ -263,3 +264,17 @@ li .active:before {
   column-gap:20px;
 }
 }
+
+/* CAROUSEL */
+
+div .carousel-img {
+  height: 80vh;
+}
+
+.carousel-img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+
