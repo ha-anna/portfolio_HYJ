@@ -1,9 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Header() {
   function toggleLink(event) {
     const panel = event.target.firstElementChild;
+    if (panel === null) {
+      return;
+    }
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
       panel.style.padding = 0;
@@ -37,9 +40,9 @@ function Header() {
   return (
     <header>
       <nav className="mobile-nav">
-        <Link to="/">
+        <NavLink to="/">
           <img src="./assets/logo.webp" alt="" className="logo" />
-        </Link>
+        </NavLink>
 
         <button
           className="mobile-toggle"
@@ -92,42 +95,42 @@ function Header() {
 
         <ul className="collapse-menu">
           <li>
-            <Link to="/overview" className="nav-link">
+            <NavLink to="/overview" className="nav-link">
               Overview
-            </Link>
+            </NavLink>
           </li>
           <li className="accordion nav-link" onClick={() => toggleLink(event)}>
             Project
             <ul className="nested panel">
               <li>
-                <Link to="/new-galateia" className="nav-link">
+                <NavLink to="/new-galateia" className="nav-link">
                   [New Galateia]
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/kolorowa" className="nav-link">
+                <NavLink to="/kolorowa" className="nav-link">
                   [Kolorowa]
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/minus" className="nav-link">
+                <NavLink to="/minus" className="nav-link">
                   [Minus]
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/concrete" className="nav-link">
+                <NavLink to="/concrete" className="nav-link">
                   [Concrete]
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/err0r" className="nav-link">
+                <NavLink to="/err0r" className="nav-link">
                   [Err0r]
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/living-and-gone" className="nav-link">
+                <NavLink to="/living-and-gone" className="nav-link">
                   [Living and gone]
-                </Link>
+                </NavLink>
               </li>
             </ul>
           </li>
@@ -135,65 +138,65 @@ function Header() {
             Reportage
             <ul className="nested panel">
               <li>
-                <Link to="/neoliberalism" className="nav-link">
+                <NavLink to="/neoliberalism" className="nav-link">
                   [Neo-liberalism]
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/lgbtq-in-warsaw" className="nav-link">
+                <NavLink to="/lgbtq-in-warsaw" className="nav-link">
                   [LGBTQ in Warsaw]
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/8-1-uprising" className="nav-link">
+                <NavLink to="/8-1-uprising" className="nav-link">
                   [8/1 Uprising]
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/independence-day" className="nav-link">
+                <NavLink to="/independence-day" className="nav-link">
                   [Independence day]
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/dont-look-back-in-anger" className="nav-link">
+                <NavLink to="/dont-look-back-in-anger" className="nav-link">
                   [Don't look back in anger]
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/issues" className="nav-link">
+                <NavLink to="/issues" className="nav-link">
                   [Issues]
-                </Link>
+                </NavLink>
               </li>
             </ul>
           </li>
           <li>
-            <Link to="/film" className="nav-link">
+            <NavLink to="/film" className="nav-link">
               Film
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/commissioned" className="nav-link">
+            <NavLink to="/commissioned" className="nav-link">
               Commissioned
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/exhibition" className="nav-link italic first">
+            <NavLink to="/exhibition" className="nav-link italic first">
               Exhibition
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/about" className="nav-link italic">
+            <NavLink to="/about" className="nav-link italic">
               About
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/contact" className="nav-link italic last">
+            <NavLink to="/contact" className="nav-link italic last">
               Contact
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link
-              to="https://www.facebook.com/youjun.ha"
+            <a
+              href="https://www.facebook.com/youjun.ha"
               className="icon nav-link"
             >
               <svg width="32" height="32" viewBox="0 0 24 24">
@@ -202,11 +205,11 @@ function Header() {
                   d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01Z"
                 />
               </svg>
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
-              to="https://www.instagram.com/studio_siseon/"
+            <a
+              href="https://www.instagram.com/studio_siseon"
               className="icon nav-link"
             >
               <svg width="32" height="34" viewBox="0 0 24 24">
@@ -217,54 +220,54 @@ function Header() {
                   clipRule="evenodd"
                 />
               </svg>
-            </Link>
+            </a>
           </li>
         </ul>
       </nav>
 
       <nav className="desktop-nav">
-        <Link to="/">
+        <NavLink to="/">
           <img src="./assets/logo.webp" alt="" className="logo" />
-        </Link>
+        </NavLink>
 
         <ul className="menu">
           <li>
-            <Link to="/overview" className="nav-link">
+            <NavLink to="/overview" className="nav-link">
               Overview
-            </Link>
+            </NavLink>
           </li>
           <li className="accordion nav-link" onClick={() => toggleLink(event)}>
             Project
             <ul className="nested panel">
               <li>
-                <Link to="/new-galateia" className="nav-link">
+                <NavLink to="/new-galateia" className="nav-link">
                   [New Galateia]
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/kolorowa" className="nav-link">
+                <NavLink to="/kolorowa" className="nav-link">
                   [Kolorowa]
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/minus" className="nav-link">
+                <NavLink to="/minus" className="nav-link">
                   [Minus]
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/concrete" className="nav-link">
+                <NavLink to="/concrete" className="nav-link">
                   [Concrete]
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/err0r" className="nav-link">
+                <NavLink to="/err0r" className="nav-link">
                   [Err0r]
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/living-and-gone" className="nav-link">
+                <NavLink to="/living-and-gone" className="nav-link">
                   [Living and gone]
-                </Link>
+                </NavLink>
               </li>
             </ul>
           </li>
@@ -272,65 +275,65 @@ function Header() {
             Reportage
             <ul className="nested panel">
               <li>
-                <Link to="/neoliberalism" className="nav-link">
+                <NavLink to="/neoliberalism" className="nav-link">
                   [Neo-liberalism]
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/lgbtq-in-warsaw" className="nav-link">
+                <NavLink to="/lgbtq-in-warsaw" className="nav-link">
                   [LGBTQ in Warsaw]
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/8-1-uprising" className="nav-link">
+                <NavLink to="/8-1-uprising" className="nav-link">
                   [8/1 Uprising]
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/independence-day" className="nav-link">
+                <NavLink to="/independence-day" className="nav-link">
                   [Independence day]
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/dont-look-back-in-anger" className="nav-link">
+                <NavLink to="/dont-look-back-in-anger" className="nav-link">
                   [Don't look back in anger]
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/issues" className="nav-link">
+                <NavLink to="/issues" className="nav-link">
                   [Issues]
-                </Link>
+                </NavLink>
               </li>
             </ul>
           </li>
           <li>
-            <Link to="/film" className="nav-link">
+            <NavLink to="/film" className="nav-link">
               Film
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/commissioned" className="nav-link">
+            <NavLink to="/commissioned" className="nav-link">
               Commissioned
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/exhibition" className="nav-link italic first">
+            <NavLink to="/exhibition" className="nav-link italic first">
               Exhibition
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/about" className="nav-link italic">
+            <NavLink to="/about" className="nav-link italic">
               About
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/contact" className="nav-link italic last">
+            <NavLink to="/contact" className="nav-link italic last">
               Contact
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link
-              to="https://www.facebook.com/youjun.ha"
+            <a
+              href="https://www.facebook.com/youjun.ha"
               className="icon nav-link"
             >
               <svg width="32" height="32" viewBox="0 0 24 24">
@@ -339,11 +342,11 @@ function Header() {
                   d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01Z"
                 />
               </svg>
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
-              to="https://www.instagram.com/studio_siseon/"
+            <a
+              href="https://www.instagram.com/studio_siseon/"
               className="icon nav-link"
             >
               <svg width="32" height="34" viewBox="0 0 24 24">
@@ -354,7 +357,7 @@ function Header() {
                   clipRule="evenodd"
                 />
               </svg>
-            </Link>
+            </a>
           </li>
         </ul>
       </nav>

@@ -56,6 +56,12 @@ h6 {
   cursor: pointer;
 }
 
+li .active {
+  color: var(--link);
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .italic {
   font-family: 'Modoni Moda', serif;
   font-weight: 300;
@@ -114,13 +120,15 @@ li .icon {
   margin-bottom: 1rem;
 }
 
-.nav-link:before {
+.nav-link:before,
+li .active:before {
   content: '';
   position: absolute;
   transition: all 200ms ease-in-out;
 }
 
-.nav-link:hover:not(.icon):before {
+.nav-link:hover:not(.icon):before,
+li .active:before {
   content: '';
   position: absolute;
   translate: -10px 8px;
@@ -193,6 +201,7 @@ li .icon {
   header {
     max-width: 200px;
     width: 100%;
+    margin: 2rem;
     margin-right: 3rem;
   }
 
@@ -207,18 +216,22 @@ li .icon {
   .menu {
     list-style-type: none;
     padding: 0;
-    font-size: 1.5em;
   }
 
   .logo {
     max-width: unset;
-    width: 200px;
+    width: 150px;
+  }
+
+  .img-grid {
+    padding-top: 2rem;
   }
 
   li .icon {
   float: left;
   transform: scale(0.6);
-  translate: -25px;
+  translate: -10px;
+  margin: 0;
 }
 
 }
