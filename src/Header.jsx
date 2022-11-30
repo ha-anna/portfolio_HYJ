@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
 function Header() {
@@ -17,6 +17,18 @@ function Header() {
       panel.style.padding = "0.5rem 0 0.7rem 1rem";
     }
   }
+
+  useEffect(() => {
+    const panel = document.body.querySelectorAll(".desktop-nav .accordion");
+    panel.forEach((item) => {
+      if (item.innerHTML.includes("active")) {
+        item.firstElementChild.style.opacity = 1;
+        item.firstElementChild.style.maxHeight =
+          item.firstElementChild.scrollHeight + 100 + "px";
+        item.firstElementChild.style.padding = "0.5rem 0 0.7rem 1rem";
+      }
+    });
+  }, []);
 
   function toggleMobileMenu() {
     const menu = document.querySelector(".collapse-menu");
