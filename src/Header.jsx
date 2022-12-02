@@ -19,7 +19,7 @@ function Header() {
   }
 
   useEffect(() => {
-    const panel = document.body.querySelectorAll(".desktop-nav .accordion");
+    const panel = document.body.querySelectorAll("nav .accordion");
     panel.forEach((item) => {
       if (item.innerHTML.includes("active")) {
         item.firstElementChild.style.opacity = 1;
