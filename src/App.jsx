@@ -15,7 +15,7 @@ function App() {
         <Header />
         <main>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Kolorowa />} />
             <Route path="/overview" element={<Placeholder />} />
             <Route path="/new-galateia" element={<Placeholder />} />
             <Route path="/kolorowa" element={<Kolorowa />} />
