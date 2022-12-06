@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import Modal from "react-modal";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-function ImageModal({ images, clickedImg }) {
+function ImageCarousel({ images, clickedImg }) {
   const imagesCarousel = images.map((url, i) => (
     <div key={i}>
       <img src={`./assets/${url.slice(2)}`} alt="" className="carousel-img" />
@@ -12,7 +11,7 @@ function ImageModal({ images, clickedImg }) {
 
   const arrowStyles = {
     position: "absolute",
-    zIndex: 2,
+    zIndex: 1,
     top: "0",
     width: "35%",
     height: "100%",
@@ -23,12 +22,13 @@ function ImageModal({ images, clickedImg }) {
     <>
       <Carousel
         selectedItem={clickedImg}
-        autoFocus={true}
         showStatus={false}
+        autoFocus={true}
         renderIndicator={false}
         showThumbs={false}
         dynamicHeight={true}
         emulateTouch={true}
+        useKeyboardArrows={true}
         renderArrowPrev={(onClickHandler, hasPrev, label) =>
           hasPrev && (
             <button
@@ -61,4 +61,4 @@ function ImageModal({ images, clickedImg }) {
   );
 }
 
-export default ImageModal;
+export default ImageCarousel;
