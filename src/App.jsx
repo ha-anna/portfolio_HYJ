@@ -5,6 +5,7 @@ import Header from "./Header";
 import Home from "./pages/Home";
 import Kolorowa from "./pages/Project/Kolorowa";
 import ErrorPage from "./pages/ErrorPage";
+import ImageCarousel from "./components/ImageCarousel";
 
 import Placeholder from "./Placeholder";
 
@@ -35,6 +36,7 @@ function App() {
             <Route path="/about" element={<Placeholder />} />
             <Route path="/contact" element={<Placeholder />} />
             <Route path="/*" element={<ErrorPage />} />
+            <Route path="/kolorowa/:name" element={<ImageCarousel />} />
           </Routes>
         </main>
       </BrowserRouter>

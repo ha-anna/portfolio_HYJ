@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
@@ -17,6 +17,13 @@ function ImageCarousel({ images, clickedImg }) {
     height: "100%",
     opacity: "0",
   };
+
+  // useEffect(() => {
+  //   const img = document.querySelector(".slider .slide div");
+  //   console.log(img.tabIndex);
+  //   img.tabIndex = "1";
+  //   img.focus();
+  // }, []);
 
   return (
     <>
