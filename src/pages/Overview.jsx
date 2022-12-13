@@ -5,6 +5,9 @@ function Overview() {
     <>
       <h2 className="page-title">Project Overview</h2>
       <hr />
+
+      <article className="project"></article>
+      <hr />
     </>
   );
 }
