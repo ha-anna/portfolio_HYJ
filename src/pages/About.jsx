@@ -38,9 +38,24 @@ function About() {
       </p>
       <hr />
       <div className="about-links">
-        <a className="standard-button">BIO EN (PDF)</a>
-        <a className="standard-button">CV (PDF)</a>
-        <a className="standard-button">BIO PL (PDF)</a>
+        <a
+          className="standard-button text-link"
+          href="./assets/PDF/HA+YOUJUN+BIO.pdf"
+        >
+          BIO EN (PDF)
+        </a>
+        <a
+          className="standard-button text-link"
+          href="./assets/PDF/HA+YOUJUN+CV.pdf"
+        >
+          CV (PDF)
+        </a>
+        <a
+          className="standard-button text-link"
+          href="./assets/PDF/HA+YOUJUN+BIO+(PL).pdf"
+        >
+          BIO PL (PDF)
+        </a>
       </div>
     </>
   );

@@ -33,6 +33,7 @@ main {
   max-width: 800px;
   width: 100%;
   padding: 2rem;
+  padding-left: 5rem;
   line-height: 1.6em;
   text-transform: none;
   letter-spacing: .02em;
@@ -141,10 +142,10 @@ li .active {
 }
 
 .decoration-bracket:before{
-  content: "<";
+  content: " <";
 }
 .decoration-bracket:after{
-  content: ">";
+  content: "> ";
 }
 
 /* NAVIGATION */
