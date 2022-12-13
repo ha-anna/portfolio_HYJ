@@ -33,7 +33,6 @@ main {
   max-width: 800px;
   width: 100%;
   padding: 2rem;
-  padding-left: 5rem;
   line-height: 1.6em;
   text-transform: none;
   letter-spacing: .02em;
@@ -60,6 +59,7 @@ h6 {
 
 .page-title {
   text-align: center;
+  font-size: 1.9em;
 }
 
 hr {
@@ -305,6 +305,9 @@ li .active:before {
     width: 100%;
     margin: 2rem;
     margin-right: 3rem;
+  }
+  main {
+    padding-left: 5rem;
   }
 
   .mobile-nav {
