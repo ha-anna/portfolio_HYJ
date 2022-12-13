@@ -7,6 +7,8 @@
   --text-header: #121212;
   --link: #121212;
   --link-hover: #fb94bc;
+  --button-bg: #121212;
+  --button-text: #F0F0F0;
 }
 
 * {
@@ -15,7 +17,7 @@
 
 body {
   font-family: 'Noto Sans', 'Noto Sans KR', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   background: var(--bg);
   color: var(--text);
   margin: 0;
@@ -28,8 +30,13 @@ body {
 }
 
 main {
-  max-width: 100%;
+  max-width: 800px;
+  width: 100%;
   padding: 2rem;
+  line-height: 1.6em;
+  text-transform: none;
+  letter-spacing: .02em;
+  font-size: 0.85em;
 }
 
 header {
@@ -50,6 +57,23 @@ h6 {
   color: var(--text-header);
 }
 
+.page-title {
+  text-align: center;
+}
+
+hr {
+  border-top: none;
+  opacity: 0.5;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  width: 90%;
+}
+
+p {
+  max-width: 600px;
+  margin: 1rem auto;
+}
+
 .nav-link {
   color: var(--link);
   font-weight: 600;
@@ -68,6 +92,59 @@ li .active {
   font-weight: 300;
   font-style: italic;
   display: inline-block;
+}
+
+.text-link {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--link);
+}
+
+.text-link {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--link);
+  position: relative;
+}
+
+.text-link::before {
+  content: '';
+  background-color: var(--link-hover);
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  width: 100%;
+  height: 8px;
+  z-index: -1;
+  transition: all .3s ease-in-out;
+}
+
+.text-link:hover::before {
+  bottom: 0;
+  height: 100%;
+}
+
+.standard-button {
+  border: none;
+  background: var(--button-bg);
+  color: var(--button-text);
+  font-size: 1em;
+  font-weight: 600;
+  padding: 0.8rem 0.5rem;
+  cursor: pointer;
+  transition: outline ease-in 200ms;
+  text-align: center;
+}
+
+.standard-button:hover {
+  outline: 3px solid var(--link-hover)
+}
+
+.decoration-bracket:before{
+  content: "<";
+}
+.decoration-bracket:after{
+  content: ">";
 }
 
 /* NAVIGATION */
@@ -193,6 +270,29 @@ li .active:before {
 .img-grid img:hover {
   opacity: .9;
 }
+
+/* ABOUT */
+
+.about-links {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: ". bio-en . cv ."
+                        ". bio-pl . . .";
+  row-gap: 3rem;
+}
+
+.about-links .standard-button:nth-child(1) {
+  grid-area: bio-en;
+}
+
+.about-links .standard-button:nth-child(2) {
+  grid-area: cv;
+}
+.about-links .standard-button:nth-child(3) {
+  grid-area: bio-pl;
+}
+
 
 @media only screen and (min-width: 768px) {
   #root {

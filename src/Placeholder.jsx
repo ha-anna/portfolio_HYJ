@@ -5,7 +5,9 @@ function Placeholder() {
   return (
     <>
       <h2>Placeholder page</h2>
-      <Link to="/">Go back.</Link>
+      <Link to="/" className="text-link">
+        Link to main page.
+      </Link>
     </>
   );
 }

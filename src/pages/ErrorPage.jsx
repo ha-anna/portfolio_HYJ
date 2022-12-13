@@ -1,11 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function ErrorPage() {
+  const navigate = useNavigate();
+
   return (
     <>
       <h2>Whoops! An error!</h2>
-      <Link to="/">Go back.</Link>
+      <button onClick={() => navigate(-1)} className="standard-button">
+        Go back one page
+      </button>
     </>
   );
 }

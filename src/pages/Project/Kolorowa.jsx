@@ -5,7 +5,7 @@ import { Link, generatePath } from "react-router-dom";
 import { CarouselProvider } from "../../carouselContext";
 
 function Kolorowa() {
-  const context = React.useContext(CarouselContext);
+  // const context = React.useContext(CarouselContext);
   const [modalIsOpen, setIsOpen] = React.useState(false);
 
   // Modal.setAppElement("#root");
@@ -24,7 +24,7 @@ function Kolorowa() {
   //     transform: "translate(-50%, -50%)",
   //   },
   // };
-  generatePath("/:name", { name: clickedImg });
+  // generatePath("/:name", { name: clickedImg });
 
   const images = Object.keys(import.meta.glob("./kolorowa/*", { as: "raw" }));
   const imagesHtml = images.map((url, i) => (
@@ -47,7 +47,10 @@ function Kolorowa() {
 
   return (
     <>
-      <ImageCarousel images={images} clickedImg={clickedImg} />
+      <ImageCarousel
+        images={images}
+        // clickedImg={clickedImg}
+      />
       <div className="img-grid">{imagesHtml}</div>
     </>
   );
