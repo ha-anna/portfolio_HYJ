@@ -47,10 +47,10 @@ function Kolorowa() {
 
   return (
     <>
-      <ImageCarousel
+      {/* <ImageCarousel
         images={images}
-        // clickedImg={clickedImg}
-      />
+        clickedImg={clickedImg}
+      /> */}
       <div className="img-grid">{imagesHtml}</div>
     </>
   );

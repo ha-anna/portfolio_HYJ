@@ -17,7 +17,7 @@
 
 body {
   font-family: 'Noto Sans', 'Noto Sans KR', sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   background: var(--bg);
   color: var(--text);
   margin: 0;
@@ -294,6 +294,18 @@ li .active:before {
   grid-area: bio-pl;
 }
 
+/* OVERVIEW */
+
+.overview-text-eng {
+  font-weight: 300;
+
+}
+
+.overview-project-text {
+  display: flex;
+  gap: 2rem;
+}
+
 
 @media only screen and (min-width: 768px) {
   #root {
@@ -383,6 +395,56 @@ div .carousel-img {
   max-width: 100%;
   height: auto;
   object-fit: contain;
+}
+
+/* CAROUSEL WITH THUMBNAILS */
+
+.carousel .control-prev.control-arrow::before {
+  border-right: 8px solid var(--text) !important;
+}
+
+.carousel .control-next.control-arrow::before {
+  border-left: 8px solid var(--text) !important;
+}
+
+.project-carousel-img {
+  max-height: 500px;
+  max-width: 500px;
+  object-fit: contain;
+}
+
+.thumbs-wrapper {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.carousel-thumb {
+  object-fit: cover;
+  aspect-ratio: 1/1;
+}
+
+.carousel .thumb {
+  max-width: 30px;
+  margin: 0;
+  padding: 0;
+  border: none !important;
+  cursor: pointer;
+}
+
+.thumbs {
+  margin: 0;
+  padding: 0;
+}
+
+li.thumb {
+  border: none;
+}
+
+li.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 

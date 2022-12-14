@@ -9,7 +9,7 @@ import ImageCarousel from "./components/ImageCarousel";
 import ErrorPage from "./pages/ErrorPage";
 import Placeholder from "./Placeholder";
 
-import Overview from "./pages/Overview";
+import Overview from "./pages/Overview/Overview";
 
 // PROJECT PAGES
 import Kolorowa from "./pages/Project/Kolorowa";
