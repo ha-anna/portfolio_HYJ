@@ -148,6 +148,11 @@ li .active {
   content: "> ";
 }
 
+.video-description {
+  padding: 0;
+  margin: 0;
+}
+
 /* NAVIGATION */
 
 .logo {
@@ -298,7 +303,12 @@ li .active:before {
 
 .overview-text-eng {
   font-weight: 300;
+}
 
+.overview-text-kr p,
+.overview-text-eng p {
+  margin-left: 0;
+  max-width: unset;
 }
 
 .overview-project-text {
@@ -409,7 +419,6 @@ div .carousel-img {
 
 .project-carousel-img {
   max-height: 500px;
-  max-width: 500px;
   object-fit: contain;
 }
 
@@ -425,9 +434,8 @@ div .carousel-img {
 }
 
 .carousel .thumb {
-  max-width: 30px;
-  margin: 0;
-  padding: 0;
+  margin: 0 !important;
+  padding: 0 !important;
   border: none !important;
   cursor: pointer;
 }
@@ -437,9 +445,6 @@ div .carousel-img {
   padding: 0;
 }
 
-li.thumb {
-  border: none;
-}
 
 li.slide {
   display: flex;

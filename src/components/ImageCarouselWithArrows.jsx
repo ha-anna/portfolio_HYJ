@@ -29,6 +29,7 @@ function ImageCarouselWithArrows({ images }) {
         renderThumbs={customRenderThumb}
         emulateTouch={true}
         useKeyboardArrows={true}
+        infiniteLoop={true}
       >
         {imagesCarousel}
       </Carousel>
