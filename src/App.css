@@ -313,7 +313,7 @@ li .active:before {
 
 .overview-project-text {
   display: flex;
-  gap: 2rem;
+  flex-flow: column nowrap;
 }
 
 
@@ -330,6 +330,7 @@ li .active:before {
   }
   main {
     padding-left: 5rem;
+    max-width: calc(100vw - 200px - 10rem);
   }
 
   .mobile-nav {
@@ -367,7 +368,17 @@ li .active:before {
   .img-grid{
   column-count:2;
   column-gap:20px;
-}
+  }
+
+  .overview-project-text {
+    flex-flow: row nowrap;
+    gap: 2rem;
+  }
+
+  .overview-text-kr,
+  .overview-text-eng {
+    max-width: 50%;
+  }
 }
 
 @media (min-width:1600px){
