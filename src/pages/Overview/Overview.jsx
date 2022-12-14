@@ -268,7 +268,7 @@ function Overview() {
 
       <article className="project">
         <ImageCarouselWithArrows images={imagesErr0r} />
-        <section className="overview-text-kr">
+        <section>
           <h3>ERR0R (2015)</h3>
           <p>
             인간은 실수를 한다. '인간미'있다는 말은 가끔 완벽하지 않고
