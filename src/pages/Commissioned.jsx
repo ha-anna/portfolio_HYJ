@@ -3,8 +3,7 @@ import React from "react";
 function Commissioned() {
   return (
     <>
-      <h2 className="page-title">Commissioned</h2>
-      <hr />
+      <h2 className="page-title border-bottom">Commissioned</h2>
     </>
   );
 }

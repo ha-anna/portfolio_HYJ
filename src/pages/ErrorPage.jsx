@@ -6,7 +6,7 @@ function ErrorPage() {
 
   return (
     <>
-      <h2>Whoops! An error!</h2>
+      <h2 className="border-bottom">Whoops! An error!</h2>
       <button onClick={() => navigate(-1)} className="standard-button">
         Go back one page
       </button>

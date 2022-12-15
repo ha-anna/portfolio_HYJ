@@ -3,8 +3,7 @@ import React from "react";
 function Exhibition() {
   return (
     <>
-      <h2 className="page-title">Exhibition</h2>
-      <hr />
+      <h2 className="page-title border-bottom">Exhibition</h2>
     </>
   );
 }
