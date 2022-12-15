@@ -3,8 +3,7 @@ import React from "react";
 function About() {
   return (
     <>
-      <h2 className="page-title">About</h2>
-      <hr />
+      <h2 className="page-title border-bottom">About</h2>
       <p>
         Ha You-jun was born in 1991 in Seoul, South Korea. He majored in
         Cultural Studies and Film at Kyung Hee University. After his studies, he
@@ -21,7 +20,7 @@ function About() {
         special duties and extensive military exercises like the Key Resolve,
         the UFG (Ulchi Freedom Guardian).
       </p>
-      <p>
+      <p className="border-bottom">
         He moves back and forth between Seoul and Warsaw, Poland, which has many
         similarities in the historical background of Korean society and gives
         inspiration to the new objects. He opened two solo shows.
@@ -36,7 +35,6 @@ function About() {
         displayed the artworks; the photo collage artworks the symmetrical
         beauty of the modern and tradition in Suwon city.
       </p>
-      <hr />
       <div className="about-links">
         <a
           className="standard-button text-link"

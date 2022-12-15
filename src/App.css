@@ -153,6 +153,16 @@ li .active {
   margin-bottom: 2.5rem;
 }
 
+.text-eng {
+  font-weight: 300;
+}
+
+.text-kr p,
+.text-eng p {
+  margin-left: 0;
+  max-width: unset;
+}
+
 /* NAVIGATION */
 
 .logo {
@@ -301,16 +311,6 @@ li .active:before {
 
 /* OVERVIEW */
 
-.overview-text-eng {
-  font-weight: 300;
-}
-
-.overview-text-kr p,
-.overview-text-eng p {
-  margin-left: 0;
-  max-width: unset;
-}
-
 .overview-project-text {
   display: flex;
   flex-flow: column nowrap;
@@ -375,12 +375,12 @@ li .active:before {
     gap: 2rem;
   }
 
-  .overview-text-kr,
-  .overview-text-eng {
+  .text-kr,
+  .text-eng {
     max-width: 50%;
   }
 
-  .overview-text-kr.single {
+  .text-kr.single {
     max-width: 100%;
   }
 }

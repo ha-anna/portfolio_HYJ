@@ -26,7 +26,7 @@ function Overview() {
         <ImageCarouselWithArrows images={imagesNewGalateia} />
 
         <section className="overview-project-text">
-          <section className="overview-text-eng">
+          <section className="text-eng">
             <h3>NEW GALATEIA (2019)</h3>
             <p>
               A new Galateia, a photographic collage on sex robots in the coming
@@ -57,7 +57,7 @@ function Overview() {
               shows man's desire.
             </p>
           </section>
-          <section className="overview-text-kr">
+          <section className="text-kr">
             <h3>뉴 갈라테이아 (2019)</h3>
             <p>
               도래하는 포스트휴먼 시대에 새로운 갈라테이아, 섹스로봇에 관한
@@ -97,7 +97,7 @@ function Overview() {
       <article className="project border-bottom">
         <ImageCarouselWithArrows images={imagesKolorowa} />
         <section className="overview-project-text">
-          <section className="overview-text-eng">
+          <section className="text-eng">
             <h3>KOLOROWA (2018-ONGOING)</h3>
             <p>
               Impression represented by the colors of the city. Street and
@@ -115,7 +115,7 @@ function Overview() {
               future. This project is my impression and documentary of the city.
             </p>
           </section>
-          <section className="overview-text-kr">
+          <section className="text-kr">
             <h3>컬러로바 (2018-진행중)</h3>
             <p>
               컬러 오브제로 재현해내는 도시의 인상. 스트리트, 다큐멘터리 포토
@@ -136,7 +136,7 @@ function Overview() {
       <article className="project border-bottom">
         <ImageCarouselWithArrows images={imagesMinus} />
         <section className="overview-project-text">
-          <section className="overview-text-eng">
+          <section className="text-eng">
             <h3>MINUS (2018)</h3>
             <p>
               What is the main role of family? What the family should be? I
@@ -170,7 +170,7 @@ function Overview() {
               family has something for being called a family in modern society.
             </p>
           </section>
-          <section className="overview-text-kr">
+          <section className="text-kr">
             <h3>마이너스 (2018)</h3>
             <p>
               가족의 역할은 무엇일까? 가족은 어떠해야만 하는가? 어바웃 매거진의
@@ -217,7 +217,7 @@ function Overview() {
       <article className="project border-bottom">
         <ImageCarouselWithArrows images={imagesConcrete} />
         <section className="overview-project-text">
-          <section className="overview-text-eng">
+          <section className="text-eng">
             <h3>CONCRETE (2017) </h3>
             <p>
               “The Cracked surface of Concrete shows how the space was made like
@@ -231,7 +231,7 @@ function Overview() {
               concrete is important when we interpret our social space.
             </p>
           </section>
-          <section className="overview-text-kr">
+          <section className="text-kr">
             <h3>콘크리트 (2017) </h3>
             <p>
               “노인의 주름이 그의 삶을 이야기 하듯, 콘크리트의 갈라진 표면을
@@ -262,7 +262,7 @@ function Overview() {
 
       <article className="project border-bottom">
         <ImageCarouselWithArrows images={imagesErr0r} />
-        <section className="overview-text-kr single ">
+        <section className="text-kr single ">
           <h3>ERR0R (2015)</h3>
           <p>
             인간은 실수를 한다. '인간미'있다는 말은 가끔 완벽하지 않고
