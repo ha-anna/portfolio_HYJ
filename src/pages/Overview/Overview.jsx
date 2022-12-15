@@ -204,9 +204,9 @@ function Overview() {
           className="video"
           src="https://www.youtube.com/embed/mgSAtf-HhrU"
           title="YouTube video player"
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
+          allowFullScreen
         ></iframe>
         <p className="video-description text-eng">
           ART MAGAZINE ‘ABOUT FAMILY’ PHOTOWORKS BY HA YOUJUN ‘MINUS’
@@ -249,9 +249,9 @@ function Overview() {
           className="video"
           src="https://www.youtube.com/embed/hhfpQiNE6n0"
           title="YouTube video player"
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
+          allowFullScreen
         ></iframe>
         <p className="video-description text-eng">
           ART MAGAZINE ‘ABOUT PLACE’, PHOTOWORKS BY HA YOUJUN ‘CONCRETE’

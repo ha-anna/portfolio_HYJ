@@ -14,10 +14,9 @@ function ImageCarouselWithArrows({ images }) {
   ));
 
   const customRenderThumb = (children) =>
-    children.map((item) => {
+    children.map((item, i) => {
       const { src } = item.props.children.props;
-      console.log(src);
-      return <img src={src} alt="" className="carousel-thumb" />;
+      return <img key={i} src={src} alt="" className="carousel-thumb" />;
     });
 
   return (
