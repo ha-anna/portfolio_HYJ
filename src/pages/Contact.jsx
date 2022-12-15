@@ -51,7 +51,7 @@ function Contact() {
   }, [formData]);
 
   return (
-    <>
+    <div className="contact">
       <h2 className="page-title border-bottom">Contact</h2>
       <form
         ref={form}
@@ -97,15 +97,15 @@ function Contact() {
             value={formData.message}
           />
         </label>
-        <button className="standard-button">Submit</button>
+        <button className="standard-button margin-top-1">Submit</button>
       </form>
       <div className="address">
-        <h3>STUDIO SISEON</h3>
+        <span className="bold-big">STUDIO SISEON</span>
         <address>
           aleja Niepodległosci 76/78 <br /> Warszawa, mazowieckie, 02-607
         </address>
       </div>
-    </>
+    </div>
   );
 }
 

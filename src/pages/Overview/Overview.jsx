@@ -19,7 +19,7 @@ function Overview() {
   const imagesErr0r = Object.keys(import.meta.glob("./Err0r/*", { as: "raw" }));
 
   return (
-    <>
+    <div className="overview">
       <h2 className="page-title border-bottom">Project Overview</h2>
 
       <article className="project border-bottom">
@@ -281,7 +281,7 @@ function Overview() {
           </p>
         </section>
       </article>
-    </>
+    </div>
   );
 }
 

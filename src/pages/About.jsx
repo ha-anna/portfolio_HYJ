@@ -2,7 +2,7 @@ import React from "react";
 
 function About() {
   return (
-    <>
+    <div className="about">
       <h2 className="page-title border-bottom">About</h2>
       <p className="text-eng single">
         Ha You-jun was born in 1991 in Seoul, South Korea. He majored in
@@ -55,7 +55,7 @@ function About() {
           BIO PL (PDF)
         </a>
       </div>
-    </>
+    </div>
   );
 }
 

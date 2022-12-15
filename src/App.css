@@ -32,7 +32,6 @@ body {
 }
 
 main {
-  max-width: 800px;
   width: 100%;
   padding: 2rem;
   line-height: 1.6em;
@@ -101,6 +100,16 @@ li .active {
   font-weight: 600;
   color: var(--link);
   position: relative;
+}
+
+.margin-top-1 {
+  margin-top: 1rem;
+}
+
+.bold-big {
+  font-weight: 600;
+  color: var(--text-header);
+  font-size: 1.3em;
 }
 
 .text-link::before {
@@ -300,6 +309,10 @@ li .active:before {
 
 /* ABOUT */
 
+.about {
+  max-width: 680px;
+}
+
 .about-links {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -327,7 +340,15 @@ li .active:before {
   flex-flow: column nowrap;
 }
 
+.overview {
+  max-width: 800px;
+}
+
 /* CONTACT */
+
+.contact {
+  max-width: 680px;
+}
 
 .contact-form {
   display: flex;
@@ -390,7 +411,10 @@ li .active:before {
   }
   main {
     padding-left: 5rem;
-    width: calc(100vw - 200px - 10rem);
+  }
+
+  .overview {
+    width: calc(100vw - 200px - 10rem - 112px);
   }
 
   .mobile-nav {
