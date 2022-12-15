@@ -201,15 +201,14 @@ function Overview() {
           </section>
         </section>
         <iframe
-          width="100%"
-          height="400"
+          className="video"
           src="https://www.youtube.com/embed/mgSAtf-HhrU"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
-        <p className="video-description">
+        <p className="video-description text-eng">
           ART MAGAZINE ‘ABOUT FAMILY’ PHOTOWORKS BY HA YOUJUN ‘MINUS’
         </p>
       </article>
@@ -247,15 +246,14 @@ function Overview() {
           </section>
         </section>
         <iframe
-          width="100%"
-          height="400"
+          className="video"
           src="https://www.youtube.com/embed/hhfpQiNE6n0"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
-        <p className="video-description">
+        <p className="video-description text-eng">
           ART MAGAZINE ‘ABOUT PLACE’, PHOTOWORKS BY HA YOUJUN ‘CONCRETE’
         </p>
       </article>

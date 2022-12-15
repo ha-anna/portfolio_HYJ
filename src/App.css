@@ -10,6 +10,7 @@
   --button-bg: #121212;
   --button-text: #F0F0F0;
   --border: #cbc9c9;
+  --input-bg: #f8f8f8;
 }
 
 * {
@@ -161,6 +162,16 @@ li .active {
 .text-eng p {
   margin-left: 0;
   max-width: unset;
+}
+
+.video {
+  width: 100%;
+  height: 450px;
+}
+
+#map {
+  width: 100px;
+  height: 100px;
 }
 
 /* NAVIGATION */
@@ -316,6 +327,55 @@ li .active:before {
   flex-flow: column nowrap;
 }
 
+/* CONTACT */
+
+.contact-form {
+  display: flex;
+  flex-flow: row wrap;
+}
+.contact-form input,
+.contact-form textarea {
+  display: block;
+  line-height: 1.7;
+  margin: 0;
+  width: 100%;
+  background: var(--input-bg);
+  border: 1px solid var(--border);
+  min-height: 40px;
+}
+
+.contact-form textarea {
+  height: 250px;
+}
+
+
+.contact-form input:hover,
+.contact-form textarea:hover {
+  outline: 3px solid var(--link-hover);
+}
+
+.contact-form label:nth-child(1),
+.contact-form label:nth-child(2) {
+  flex-basis: 50%;
+}
+
+.contact-form label:nth-child(3),
+.contact-form label:nth-child(4) {
+  flex-basis: 100%;
+}
+
+.contact-form label {
+  color: var(--text-header);
+  padding: 0.3rem;
+}
+
+.contact-form button {
+  margin-left: auto;
+  margin-right: 0.3rem;
+  width: 200px;
+}
+
+
 
 @media only screen and (min-width: 768px) {
   #root {
@@ -380,7 +440,8 @@ li .active:before {
     max-width: 50%;
   }
 
-  .text-kr.single {
+  .text-kr.single,
+  .text-eng.single {
     max-width: 100%;
   }
 }
