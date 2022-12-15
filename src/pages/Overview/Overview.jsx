@@ -20,10 +20,9 @@ function Overview() {
 
   return (
     <>
-      <h2 className="page-title">Project Overview</h2>
-      <hr />
+      <h2 className="page-title border-bottom">Project Overview</h2>
 
-      <article className="project">
+      <article className="project border-bottom">
         <ImageCarouselWithArrows images={imagesNewGalateia} />
 
         <section className="overview-project-text">
@@ -95,9 +94,7 @@ function Overview() {
         </section>
       </article>
 
-      <hr />
-
-      <article className="project">
+      <article className="project border-bottom">
         <ImageCarouselWithArrows images={imagesKolorowa} />
         <section className="overview-project-text">
           <section className="overview-text-eng">
@@ -135,9 +132,8 @@ function Overview() {
           </section>
         </section>
       </article>
-      <hr />
 
-      <article className="project">
+      <article className="project border-bottom">
         <ImageCarouselWithArrows images={imagesMinus} />
         <section className="overview-project-text">
           <section className="overview-text-eng">
@@ -217,9 +213,8 @@ function Overview() {
           ART MAGAZINE ‘ABOUT FAMILY’ PHOTOWORKS BY HA YOUJUN ‘MINUS’
         </p>
       </article>
-      <hr />
 
-      <article className="project">
+      <article className="project border-bottom">
         <ImageCarouselWithArrows images={imagesConcrete} />
         <section className="overview-project-text">
           <section className="overview-text-eng">
@@ -264,9 +259,8 @@ function Overview() {
           ART MAGAZINE ‘ABOUT PLACE’, PHOTOWORKS BY HA YOUJUN ‘CONCRETE’
         </p>
       </article>
-      <hr />
 
-      <article className="project">
+      <article className="project border-bottom">
         <ImageCarouselWithArrows images={imagesErr0r} />
         <section className="overview-text-kr single ">
           <h3>ERR0R (2015)</h3>
@@ -289,7 +283,6 @@ function Overview() {
           </p>
         </section>
       </article>
-      <hr />
     </>
   );
 }

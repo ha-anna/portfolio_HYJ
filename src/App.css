@@ -9,6 +9,7 @@
   --link-hover: #fb94bc;
   --button-bg: #121212;
   --button-text: #F0F0F0;
+  --border: #cbc9c9;
 }
 
 * {
@@ -62,13 +63,6 @@ h6 {
   font-size: 1.9em;
 }
 
-hr {
-  border-top: none;
-  opacity: 0.5;
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-  width: 90%;
-}
 
 p {
   max-width: 600px;
@@ -151,6 +145,12 @@ li .active {
 .video-description {
   padding: 0;
   margin: 0;
+}
+
+.border-bottom {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
 /* NAVIGATION */
@@ -330,7 +330,7 @@ li .active:before {
   }
   main {
     padding-left: 5rem;
-    max-width: calc(100vw - 200px - 10rem);
+    width: calc(100vw - 200px - 10rem);
   }
 
   .mobile-nav {
