@@ -7,7 +7,6 @@ import Header from "./Header";
 import ImageCarousel from "./components/ImageCarousel";
 
 import ErrorPage from "./pages/ErrorPage";
-import Placeholder from "./Placeholder";
 
 import Overview from "./pages/Overview/Overview";
 
@@ -33,18 +32,18 @@ function App() {
           <Routes>
             <Route path="/" element={<Kolorowa />} />
             <Route path="/overview" element={<Overview />} />
-            <Route path="/new-galateia" element={<Placeholder />} />
+            <Route path="/new-galateia" element={<ErrorPage />} />
             <Route path="/kolorowa" element={<Kolorowa />} />
-            <Route path="/minus" element={<Placeholder />} />
-            <Route path="/concrete" element={<Placeholder />} />
-            <Route path="/err0r" element={<Placeholder />} />
-            <Route path="/living-and-gone" element={<Placeholder />} />
-            <Route path="/neoliberalism" element={<Placeholder />} />
-            <Route path="/lgbt-in-warsaw" element={<Placeholder />} />
-            <Route path="/8-1-uprising" element={<Placeholder />} />
-            <Route path="/independence-day" element={<Placeholder />} />
-            <Route path="/dont-look-back-in-anger" element={<Placeholder />} />
-            <Route path="/issues" element={<Placeholder />} />
+            <Route path="/minus" element={<ErrorPage />} />
+            <Route path="/concrete" element={<ErrorPage />} />
+            <Route path="/err0r" element={<ErrorPage />} />
+            <Route path="/living-and-gone" element={<ErrorPage />} />
+            <Route path="/neoliberalism" element={<ErrorPage />} />
+            <Route path="/lgbt-in-warsaw" element={<ErrorPage />} />
+            <Route path="/8-1-uprising" element={<ErrorPage />} />
+            <Route path="/independence-day" element={<ErrorPage />} />
+            <Route path="/dont-look-back-in-anger" element={<ErrorPage />} />
+            <Route path="/issues" element={<ErrorPage />} />
             <Route path="/film" element={<Film />} />
             <Route path="/commissioned" element={<Commissioned />} />
             <Route path="/exhibition" element={<Exhibition />} />
