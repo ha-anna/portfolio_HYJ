@@ -102,7 +102,7 @@ function Contact() {
       <div className="address">
         <span className="bold-big">STUDIO SISEON</span>
         <address>
-          aleja Niepodległosci 76/78 <br /> Warszawa, mazowieckie, 02-607
+          aleja Niepodległości 76/78 <br /> Warszawa, mazowieckie, 02-607
         </address>
       </div>
     </div>
