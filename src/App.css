@@ -315,11 +315,12 @@ li .active:before {
 
 .about-links {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: 1fr, 2fr, 1fr, 2fr, 1fr;
   grid-template-rows: auto;
   grid-template-areas: ". bio-en . cv ."
                         ". bio-pl . . .";
   row-gap: 3rem;
+  justify-items: center;
 }
 
 .about-links .standard-button:nth-child(1) {
@@ -331,6 +332,11 @@ li .active:before {
 }
 .about-links .standard-button:nth-child(3) {
   grid-area: bio-pl;
+}
+
+.about-links > a {
+  min-width: 130px;
+  max-width: 150px;
 }
 
 /* OVERVIEW */
