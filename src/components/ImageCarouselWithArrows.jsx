@@ -6,7 +6,7 @@ function ImageCarouselWithArrows({ images }) {
   const imagesCarousel = images.map((url, i) => (
     <div key={i}>
       <img
-        src={`./assets/Project/${url.slice(2)}`}
+        src={`${url.match(/public\/(.*)/)[1]}`}
         alt=""
         className="project-carousel-img"
       />

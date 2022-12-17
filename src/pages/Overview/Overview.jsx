@@ -3,20 +3,28 @@ import ImageCarouselWithArrows from "../../components/ImageCarouselWithArrows";
 
 function Overview() {
   const imagesNewGalateia = Object.keys(
-    import.meta.glob("./New_Galateia/*", { as: "raw" })
+    import.meta.glob("../../../public/assets/Project/New_Galateia/*", {
+      as: "raw",
+    })
   );
 
   const imagesKolorowa = Object.keys(
-    import.meta.glob("./Kolorowa/*", { as: "raw" })
+    import.meta.glob("../../../public/assets/Project/Kolorowa/*", { as: "raw" })
   );
 
-  const imagesMinus = Object.keys(import.meta.glob("./Minus/*", { as: "raw" }));
+  const imagesMinus = Object.keys(
+    import.meta.glob("../../../public/assets/Project/Minus/*", { as: "raw" })
+  );
 
   const imagesConcrete = Object.keys(
-    import.meta.glob("./Concrete/*", { as: "raw" })
+    import.meta.glob("../../../public/assets/Project/Concrete/*", { as: "raw" })
   );
 
-  const imagesErr0r = Object.keys(import.meta.glob("./Err0r/*", { as: "raw" }));
+  const imagesErr0r = Object.keys(
+    import.meta.glob("../../../public/assets/Project/Err0r/*", { as: "raw" })
+  );
+
+  console.log(imagesKolorowa);
 
   return (
     <div className="overview">
