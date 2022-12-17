@@ -24,8 +24,6 @@ function Overview() {
     import.meta.glob("../../../public/assets/Project/Err0r/*", { as: "raw" })
   );
 
-  console.log(imagesKolorowa);
-
   return (
     <div className="overview">
       <h2 className="page-title border-bottom">Project Overview</h2>
