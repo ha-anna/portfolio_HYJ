@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
-import ImageCarousel from "../../components/ImageCarousel";
+import ImageCarousel from "../../../components/ImageCarousel";
 import { Link, generatePath } from "react-router-dom";
-import { CarouselProvider } from "../../carouselContext";
+import { CarouselProvider } from "../../../carouselContext";
 
 function Kolorowa() {
   // const context = React.useContext(CarouselContext);
@@ -26,11 +26,11 @@ function Kolorowa() {
   // };
   // generatePath("/:name", { name: clickedImg });
 
-  const images = Object.keys(import.meta.glob("./kolorowa/*", { as: "raw" }));
+  const images = Object.keys(import.meta.glob("./assets/*", { as: "raw" }));
   const imagesHtml = images.map((url, i) => (
-    <Link to={`/${url}`} key={i}>
+    <Link to={`${url.slice(9)}`} key={i}>
       <img
-        src={`./assets/${url.slice(2)}`}
+        src={`./assets/Kolorowa/${url.slice(9)}`}
         alt=""
         key={i}
         id={`${i}`}

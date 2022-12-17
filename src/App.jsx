@@ -11,7 +11,7 @@ import ErrorPage from "./pages/ErrorPage";
 import Overview from "./pages/Overview/Overview";
 
 // PROJECT PAGES
-import Kolorowa from "./pages/Project/Kolorowa";
+import Kolorowa from "./pages/Project/Kolorowa/Kolorowa";
 
 // REPORTAGE PAGES
 
