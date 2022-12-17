@@ -13,20 +13,20 @@ import ErrorPage from "./pages/ErrorPage";
 import Overview from "./pages/Overview/Overview";
 
 // PROJECT PAGES
-import New_Galateia from "./pages/Project/New_Galateia/New_Galateia";
-import Kolorowa from "./pages/Project/Kolorowa/Kolorowa";
-import Minus from "./pages/Project/Minus/Minus";
-import Concrete from "./pages/Project/Concrete/Concrete";
-import Err0r from "./pages/Project/Err0r/Err0r";
-import Living_And_Gone from "./pages/Project/Living_And_Gone/Living_And_Gone";
+import New_Galateia from "./pages/Project/New_Galateia";
+import Kolorowa from "./pages/Project/Kolorowa";
+import Minus from "./pages/Project/Minus";
+import Concrete from "./pages/Project/Concrete";
+import Err0r from "./pages/Project/Err0r";
+import Living_And_Gone from "./pages/Project/Living_And_Gone";
 
 // REPORTAGE PAGES
-import Neoliberalism from "./pages/Reportage/Neoliberalism/Neoliberalism";
-import LGBTQ_In_Warsaw from "./pages/Reportage/LGBTQ_In_Warsaw/LGBTQ_In_Warsaw";
-import Uprising from "./pages/Reportage/8_1_Uprising/Uprising";
-import Independence_Day from "./pages/Reportage/Independence_Day/Independence_Day";
-import Dont_Look_Back_In_Anger from "./pages/Reportage/Dont_Look_Back_In_Anger/Dont_Look_Back_In_Anger";
-import Issues from "./pages/Reportage/Issues/Issues";
+import Neoliberalism from "./pages/Reportage/Neoliberalism";
+import LGBTQ_In_Warsaw from "./pages/Reportage/LGBTQ_In_Warsaw";
+import Uprising from "./pages/Reportage/Uprising";
+import Independence_Day from "./pages/Reportage/Independence_Day";
+import Dont_Look_Back_In_Anger from "./pages/Reportage/Dont_Look_Back_In_Anger";
+import Issues from "./pages/Reportage/Issues";
 
 // FILM PAGES
 import Film from "./pages/Film/Film";
