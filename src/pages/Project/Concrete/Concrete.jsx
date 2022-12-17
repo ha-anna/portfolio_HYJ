@@ -6,7 +6,7 @@ function Concrete() {
   const imagesHtml = images.map((url, i) => (
     <Link to={`${url.slice(9)}`} key={i}>
       <img
-        src={`./assets/Concrete/${url.slice(9)}`}
+        src={`./assets/Project/Concrete/${url.slice(9)}`}
         alt=""
         key={i}
         id={`${i}`}

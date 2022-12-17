@@ -30,7 +30,7 @@ function Kolorowa() {
   const imagesHtml = images.map((url, i) => (
     <Link to={`${url.slice(9)}`} key={i}>
       <img
-        src={`./assets/Kolorowa/${url.slice(9)}`}
+        src={`./assets/Project/Kolorowa/${url.slice(9)}`}
         alt=""
         key={i}
         id={`${i}`}

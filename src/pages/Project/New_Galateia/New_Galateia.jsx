@@ -6,7 +6,7 @@ function New_Galateia() {
   const imagesHtml = images.map((url, i) => (
     <Link to={`${url.slice(9)}`} key={i}>
       <img
-        src={`./assets/New_Galateia/${url.slice(9)}`}
+        src={`./assets/Project/New_Galateia/${url.slice(9)}`}
         alt=""
         key={i}
         id={`${i}`}

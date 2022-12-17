@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-
 import "./App.css";
-import Header from "./Header";
 
+// COMPONENTS
+import Header from "./Header";
 import ImageCarousel from "./components/ImageCarousel";
 
+// 404 PAGE
 import ErrorPage from "./pages/ErrorPage";
 
+// OVERVIEW PAGE
 import Overview from "./pages/Overview/Overview";
 
 // PROJECT PAGES
@@ -20,12 +22,19 @@ import Living_And_Gone from "./pages/Project/Living_And_Gone/Living_And_Gone";
 
 // REPORTAGE PAGES
 
-import Reportage from "./pages/Reportage";
+// FILM PAGES
 import Film from "./pages/Film/Film";
+
+// COMISSIONED PAGES
 import Commissioned from "./pages/Commissioned";
 
+// EXHIBITION PAGES
 import Exhibition from "./pages/Exhibition";
+
+// ABOUT PAGE
 import About from "./pages/About";
+
+// CONTACT PAGE
 import Contact from "./pages/Contact";
 
 function App() {
