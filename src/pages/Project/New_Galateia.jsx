@@ -14,8 +14,6 @@ function New_Galateia() {
     </Link>
   ));
 
-  const regex = console.log();
-
   return (
     <>
       <div className="img-grid">{imagesHtml}</div>
