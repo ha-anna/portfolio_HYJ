@@ -214,7 +214,7 @@ function Overview() {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         ></iframe>
-        <p className="video-description text-eng">
+        <p className="text-eng">
           ART MAGAZINE ‘ABOUT FAMILY’ PHOTOWORKS BY HA YOUJUN ‘MINUS’
         </p>
       </article>
@@ -259,7 +259,7 @@ function Overview() {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         ></iframe>
-        <p className="video-description text-eng">
+        <p className="text-eng">
           ART MAGAZINE ‘ABOUT PLACE’, PHOTOWORKS BY HA YOUJUN ‘CONCRETE’
         </p>
       </article>
