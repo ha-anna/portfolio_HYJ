@@ -157,6 +157,8 @@ li .active {
   padding-bottom: 2.5rem;
   margin-bottom: 2.5rem;
   max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .text-eng {
@@ -316,7 +318,26 @@ li .active:before {
 /* FILM */
 
 .film {
-  max-width: 680px;
+  max-width: 850px;
+}
+
+.film-card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.film-card section {
+  padding: 1rem;
+}
+
+.film-card h3 {
+  margin-bottom: 2rem;
+}
+
+.film-img {
+  max-width: 550px;
+  width: 100%;
+  height: auto;
 }
 
 /* EXHIBITION */
