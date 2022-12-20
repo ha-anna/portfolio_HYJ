@@ -30,6 +30,7 @@ import Issues from "./pages/Reportage/Issues";
 
 // FILM PAGES
 import Film from "./pages/Film/Film";
+import Subscribe_My_Dream from "./pages/Film/Subscribe_My_Dream";
 
 // COMISSIONED PAGES
 import Commissioned from "./pages/Commissioned";
@@ -72,6 +73,10 @@ function App() {
             />
             <Route path="/issues" element={<Issues />} />
             <Route path="/film" element={<Film />} />
+            <Route
+              path="/film/subscribe-my-dream"
+              element={<Subscribe_My_Dream />}
+            />
             <Route path="/commissioned" element={<Commissioned />} />
             <Route path="/exhibition" element={<Exhibition />} />
             <Route path="/exhibition/kyodong-art-group" element={<Kyodong />} />
