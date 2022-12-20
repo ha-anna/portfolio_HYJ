@@ -6,7 +6,7 @@ function Concrete() {
     import.meta.glob("../../../public/assets/Project/Concrete/*", { as: "raw" })
   );
   const imagesHtml = images.map((url, i) => (
-    <Link to={`${url.match(`[^/]+(?=/$|$)`)}`} key={i}>
+    <Link to={`${i + 1}`} key={i}>
       <img src={`${url.match(/public\/(.*)/)[1]}`} alt="" key={i} id={`${i}`} />
     </Link>
   ));
