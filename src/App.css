@@ -313,6 +313,12 @@ li .active:before {
   opacity: .9;
 }
 
+/* FILM */
+
+.film {
+  max-width: 680px;
+}
+
 /* EXHIBITION */
 
 .exhibition {
