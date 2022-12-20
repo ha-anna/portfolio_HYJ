@@ -63,12 +63,6 @@ h6 {
   font-size: 1.9em;
 }
 
-
-p {
-  max-width: 600px;
-  margin: 1rem auto;
-}
-
 .nav-link {
   color: var(--link);
   font-weight: 600;
@@ -178,11 +172,6 @@ li .active {
   height: 450px;
 }
 
-#map {
-  width: 100px;
-  height: 100px;
-}
-
 /* NAVIGATION */
 
 .logo {
@@ -286,8 +275,19 @@ li .active:before {
   transition: opacity 200ms ease-out, max-height 400ms ease-out;
 }
 
+/* OVERVIEW */
 
-/* KOLOROWA */
+.overview-project-text {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.overview {
+  max-width: 800px;
+}
+
+
+/* PHOTO GALLERY */
 
 .img-grid {
   column-count: 1;
@@ -305,6 +305,12 @@ li .active:before {
 
 .img-grid img:hover {
   opacity: .9;
+}
+
+/* EXHIBITION */
+
+.exhibition {
+  max-width: 680px;
 }
 
 /* ABOUT */
@@ -337,17 +343,6 @@ li .active:before {
 .about-links > a {
   min-width: 130px;
   max-width: 150px;
-}
-
-/* OVERVIEW */
-
-.overview-project-text {
-  display: flex;
-  flex-flow: column nowrap;
-}
-
-.overview {
-  max-width: 800px;
 }
 
 /* CONTACT */
@@ -558,18 +553,3 @@ li.slide {
   align-items: center;
 }
 
-
-/* MODAL */
-
-.ReactModal__Overlay {
-    opacity: 0;
-    transition: opacity 500ms ease-in-out;
-}
-
-.ReactModal__Overlay--after-open{
-    opacity: 1;
-}
-
-.ReactModal__Overlay--before-close{
-    opacity: 0;
-}

@@ -35,7 +35,11 @@ import Film from "./pages/Film/Film";
 import Commissioned from "./pages/Commissioned";
 
 // EXHIBITION PAGES
-import Exhibition from "./pages/Exhibition";
+import Exhibition from "./pages/Exhibition/Exhibition";
+import Kyodong from "./pages/Exhibition/Kyodong";
+import Dont_Skip_It from "./pages/Exhibition/Dont_Skip_It";
+import Photo_Compilation from "./pages/Exhibition/Photo_Compilation";
+import Kolorowa_Warszawa from "./pages/Exhibition/Kolorowa_Warszawa";
 
 // ABOUT PAGE
 import About from "./pages/About";
@@ -70,6 +74,16 @@ function App() {
             <Route path="/film" element={<Film />} />
             <Route path="/commissioned" element={<Commissioned />} />
             <Route path="/exhibition" element={<Exhibition />} />
+            <Route path="/exhibition/kyodong-art-group" element={<Kyodong />} />
+            <Route path="/exhibition/dont-skip-it" element={<Dont_Skip_It />} />
+            <Route
+              path="/exhibition/photo-compilation"
+              element={<Photo_Compilation />}
+            />
+            <Route
+              path="/exhibition/kolorowa-warszawa"
+              element={<Kolorowa_Warszawa />}
+            />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/*" element={<ErrorPage />} />
