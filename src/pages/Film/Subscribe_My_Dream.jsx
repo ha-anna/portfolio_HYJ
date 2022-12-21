@@ -3,7 +3,7 @@ import React from "react";
 function Subscribe_My_Dream() {
   return (
     <div className="film">
-      {/* <iframe
+      <iframe
         width="100%"
         height="400"
         src="https://www.youtube.com/embed/lwdoVX1YUWE"
@@ -11,8 +11,7 @@ function Subscribe_My_Dream() {
         frameBorder="0"
         allow=""
         allowFullScreen
-        srcDoc="<img src='./assets/Film/smd-cover.webp' alt='' />"
-      ></iframe> */}
+      ></iframe>
       <span className="description">Subscribe my dream_Eng Sub</span>
     </div>
   );
