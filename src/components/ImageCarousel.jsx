@@ -5,6 +5,7 @@ import ImageContext from "../ImageContext";
 
 function ImageCarousel({ name }) {
   const { clickedImg } = useContext(ImageContext);
+  console.log(name);
 
   let images;
   switch (name) {
@@ -50,6 +51,156 @@ function ImageCarousel({ name }) {
         })
       );
       break;
+    case "LGBTQ_In_Warsaw":
+      images = Object.keys(
+        import.meta.glob("../../public/assets/Reportage/LGBTQ_In_Warsaw/*", {
+          as: "raw",
+        })
+      );
+      break;
+    case "Uprising":
+      images = Object.keys(
+        import.meta.glob("../../public/assets/Reportage/Uprising/*", {
+          as: "raw",
+        })
+      );
+      break;
+    case "Independence_Day":
+      images = Object.keys(
+        import.meta.glob("../../public/assets/Reportage/Independence_Day/*", {
+          as: "raw",
+        })
+      );
+      break;
+    case "Dont_Look_Back_In_Anger":
+      images = Object.keys(
+        import.meta.glob(
+          "../../public/assets/Reportage/Dont_Look_Back_In_Anger/*",
+          {
+            as: "raw",
+          }
+        )
+      );
+      break;
+    case "Issues":
+      images = Object.keys(
+        import.meta.glob("../../public/assets/Reportage/Issues/*", {
+          as: "raw",
+        })
+      );
+      break;
+    case "Lee_Heemoon":
+      images = Object.keys(
+        import.meta.glob("../../public/assets/Commissioned/Lee_Heemoon/*", {
+          as: "raw",
+        })
+      );
+      break;
+    case "W_Mag_2019_2":
+      images = Object.keys(
+        import.meta.glob("../../public/assets/Commissioned/W_Mag_2019_2/*", {
+          as: "raw",
+        })
+      );
+      break;
+    case "Cheon_Jaeseung":
+      images = Object.keys(
+        import.meta.glob("../../public/assets/Commissioned/Cheon_Jaeseung/*", {
+          as: "raw",
+        })
+      );
+      break;
+    case "W_Mag_2019_1":
+      images = Object.keys(
+        import.meta.glob("../../public/assets/Commissioned/W_Mag_2019_1/*", {
+          as: "raw",
+        })
+      );
+      break;
+    case "Jungeunhae":
+      images = Object.keys(
+        import.meta.glob("../../public/assets/Commissioned/Jungeunhae/*", {
+          as: "raw",
+        })
+      );
+      break;
+    case "Delta_Boys":
+      images = Object.keys(
+        import.meta.glob("../../public/assets/Commissioned/Delta_Boys/*", {
+          as: "raw",
+        })
+      );
+      break;
+    case "W_Mag_2018":
+      images = Object.keys(
+        import.meta.glob("../../public/assets/Commissioned/W_Mag_2018/*", {
+          as: "raw",
+        })
+      );
+      break;
+    case "Jung_Sungil":
+      images = Object.keys(
+        import.meta.glob("../../public/assets/Commissioned/Jung_Sungil/*", {
+          as: "raw",
+        })
+      );
+      break;
+    case "Son_Yeyoung":
+      images = Object.keys(
+        import.meta.glob("../../public/assets/Commissioned/Son_Yeyoung/*", {
+          as: "raw",
+        })
+      );
+      break;
+    case "W_Mag_2017":
+      images = Object.keys(
+        import.meta.glob("../../public/assets/Commissioned/W_Mag_2017/*", {
+          as: "raw",
+        })
+      );
+      break;
+    case "G_Style_2016":
+      images = Object.keys(
+        import.meta.glob("../../public/assets/Commissioned/G_Style_2016/*", {
+          as: "raw",
+        })
+      );
+      break;
+    case "Jungeunhae_EU":
+      images = Object.keys(
+        import.meta.glob("../../public/assets/Commissioned/Jungeunhae_EU/*", {
+          as: "raw",
+        })
+      );
+      break;
+    case "Kyodong_Art_Group":
+      images = Object.keys(
+        import.meta.glob("../../public/assets/Exhibition/Kyodong_Art_Group/*", {
+          as: "raw",
+        })
+      );
+      break;
+    case "Dont_Skip_It":
+      images = Object.keys(
+        import.meta.glob("../../public/assets/Exhibition/Dont_Skip_It/*", {
+          as: "raw",
+        })
+      );
+      break;
+    case "Photo_Compilation":
+      images = Object.keys(
+        import.meta.glob("../../public/assets/Exhibition/Photo_Compilation/*", {
+          as: "raw",
+        })
+      );
+      break;
+    case "Jungeunhae_EU":
+      images = Object.keys(
+        import.meta.glob("../../public/assets/Exhibition/Kolorowa_Warszawa/*", {
+          as: "raw",
+        })
+      );
+      break;
   }
 
   const imagesCarousel = images.map((url, i) => (
@@ -62,8 +213,6 @@ function ImageCarousel({ name }) {
       />
     </div>
   ));
-
-  console.log(imagesCarousel);
 
   const arrowStyles = {
     position: "absolute",

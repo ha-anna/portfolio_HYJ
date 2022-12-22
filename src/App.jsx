@@ -93,6 +93,7 @@ function App() {
                 path="/Film/Subscribe_My_Dream"
                 element={<Subscribe_My_Dream />}
               />
+              <Route path="/Commissioned/" element={<Commissioned />} />
               <Route
                 path="/Commissioned/Lee_Heemoon"
                 element={<Lee_Heemoon />}
@@ -101,7 +102,6 @@ function App() {
                 path="/Commissioned/W_Mag_2019_2"
                 element={<W_Mag_2019_2 />}
               />
-              <Route path="/Commissioned/" element={<Commissioned />} />
               <Route
                 path="/Commissioned/Cheon_Jaeseung"
                 element={<Cheon_Jaeseung />}
