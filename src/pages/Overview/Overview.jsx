@@ -207,7 +207,7 @@ function Overview() {
           </section>
         </section>
         <iframe
-          className="video"
+          className="video-big"
           src="https://www.youtube.com/embed/mgSAtf-HhrU"
           title="YouTube video player"
           frameBorder="0"
@@ -252,7 +252,7 @@ function Overview() {
           </section>
         </section>
         <iframe
-          className="video"
+          className="video-big"
           src="https://www.youtube.com/embed/hhfpQiNE6n0"
           title="YouTube video player"
           frameBorder="0"

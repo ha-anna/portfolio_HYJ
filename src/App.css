@@ -32,6 +32,7 @@ body {
 }
 
 main {
+  max-width: 100%;
   width: 100%;
   padding: 2rem;
   line-height: 1.6em;
@@ -169,11 +170,6 @@ li .active {
 .text-eng p {
   margin-left: 0;
   max-width: unset;
-}
-
-.video {
-  width: 100%;
-  height: 450px;
 }
 
 .bottom {
@@ -326,18 +322,51 @@ li .active:before {
   justify-content: space-between;
 }
 
+.film-card.video {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .film-card section {
-  padding: 1rem;
+  min-width: 200px;
 }
 
 .film-card h3 {
   margin-bottom: 2rem;
+  margin-right: 2rem;
+  white-space: nowrap;
 }
 
 .film-img {
   max-width: 550px;
   width: 100%;
   height: auto;
+}
+
+.video-big {
+  height: 100% !important;
+  width: 100% !important;
+  aspect-ratio: 16/9;
+}
+
+.video-small {
+  height: 100% !important;
+  width: 100% !important;
+  aspect-ratio: 16/9;
+}
+
+.film-title-section {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.videos-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  gap: 1rem;
 }
 
 /* EXHIBITION */
@@ -468,7 +497,7 @@ li .active:before {
     margin-right: 3rem;
   }
   main {
-    padding-left: 5rem;
+    margin: 0 2rem;
   }
 
   .overview {

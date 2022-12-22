@@ -13,7 +13,7 @@ function Film() {
             꿈도 구독이 되나요
           </h3>
           <Link to="./subscribe-my-dream" className="standard-button text-link">
-            Screening link
+            SCREENING LINK
           </Link>
         </section>
         <img
@@ -22,32 +22,62 @@ function Film() {
           className="film-img"
         />
       </article>
+
       <div className="border-bottom"></div>
 
-      <article className="film-card">
+      {/* <article className="film-card video">
         <section>
           <h3>Artist on the sight</h3>
           <p className="description">"Listen, Imagine and Feel the place"</p>
         </section>
       </article>
-      <div className="border-bottom"></div>
+      <div className="border-bottom"></div> */}
 
-      <article className="film-card">
-        <section>
+      <article className="film-card video">
+        <section className="film-title-section">
           <h3>
-            Subscribe my dream
+            Next Town SOUND
             <br />
-            꿈도 구독이 되나요
+            옆-동네 싸아운드
           </h3>
-          <Link to="./subscribe-my-dream" className="standard-button text-link">
-            Screening link
-          </Link>
+
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/JskoMciGMN0"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            className="video-big"
+          ></iframe>
         </section>
-        <img
-          src="./assets/Exhibition/Dont_Skip_It/1-0.webp"
-          alt="Subscribe My Dream poster"
-          className="film-img"
-        />
+        <section className="videos-section">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/JDSHqVFptCo"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            className="video-small"
+          ></iframe>
+
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/87rg3tosq7M"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            className="video-small"
+          ></iframe>
+
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/sKHQ0ShT7OY"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            className="video-small"
+          ></iframe>
+        </section>
       </article>
       <div className="border-bottom"></div>
     </div>
