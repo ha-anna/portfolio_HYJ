@@ -176,6 +176,14 @@ li .active {
   margin-top: auto;
 }
 
+.margin-top {
+  margin-top: 1rem !important;
+}
+
+.bold {
+  font-weight: 600;
+}
+
 /* NAVIGATION */
 
 .logo {
@@ -369,6 +377,13 @@ li .active:before {
   gap: 1rem;
 }
 
+/* SINGLE FILM PAGE */
+
+.film-field > p {
+  margin: 0.3rem 0;
+  line-height: 1.7;
+}
+
 /* EXHIBITION */
 
 .exhibition {
@@ -546,8 +561,8 @@ li .active:before {
     gap: 2rem;
   }
 
-  .text-kr,
-  .text-eng {
+  .project > .text-kr,
+  .project > .text-eng {
     max-width: 50%;
   }
 
