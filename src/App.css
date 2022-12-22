@@ -184,6 +184,10 @@ li .active {
   font-weight: 600;
 }
 
+.max-width {
+  width: 100%;
+}
+
 /* NAVIGATION */
 
 .logo {
@@ -382,6 +386,35 @@ li .active:before {
 .film-field > p {
   margin: 0.3rem 0;
   line-height: 1.7;
+}
+
+/* COMMISSIONED */
+
+.commissioned {
+  max-width: 850px;
+}
+
+.commissioned-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.commissioned-card {
+  padding: 1rem;
+  max-width: 33%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.commissioned-image {
+  width: 100%;
+  height: auto;
+  transition: transform ease-in-out 200ms;
+}
+
+.commissioned-image:hover {
+  transform: scale(0.97)
 }
 
 /* EXHIBITION */

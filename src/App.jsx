@@ -33,7 +33,19 @@ import Film from "./pages/Film/Film";
 import Subscribe_My_Dream from "./pages/Film/Subscribe_My_Dream";
 
 // COMISSIONED PAGES
-import Commissioned from "./pages/Commissioned";
+import Commissioned from "./pages/Commissioned/Commissioned";
+import Lee_Heemoon from "./pages/Commissioned/Lee_Heemoon";
+import W_Mag_2019_2 from "./pages/Commissioned/W_Mag_2019_2";
+import Cheon_Jaeseung from "./pages/Commissioned/Cheon_Jaeseung";
+import W_Mag_2019_1 from "./pages/Commissioned/W_Mag_2019_1";
+import Jungeunhae from "./pages/Commissioned/Jungeunhae";
+import Delta_Boys from "./pages/Commissioned/Delta_Boys";
+import W_Mag_2018 from "./pages/Commissioned/W_Mag_2018";
+import Jung_Sungil from "./pages/Commissioned/Jung_Sungil";
+import Son_Yeyoung from "./pages/Commissioned/Son_Yeyoung";
+import W_Mag_2017 from "./pages/Commissioned/W_Mag_2017";
+import G_Style_2016 from "./pages/Commissioned/G_Style_2016";
+import Jungeunhae_EU from "./pages/Commissioned/Jungeunhae_EU";
 
 // EXHIBITION PAGES
 import Exhibition from "./pages/Exhibition/Exhibition";
@@ -77,7 +89,41 @@ function App() {
               path="/film/subscribe-my-dream"
               element={<Subscribe_My_Dream />}
             />
-            <Route path="/commissioned" element={<Commissioned />} />
+            <Route path="/commissioned/lee-heemoon" element={<Lee_Heemoon />} />
+            <Route
+              path="/commissioned/w-magazine-2019-2"
+              element={<W_Mag_2019_2 />}
+            />
+            <Route path="/commissioned/" element={<Commissioned />} />
+            <Route
+              path="/commissioned/cheon-jaeseung"
+              element={<Cheon_Jaeseung />}
+            />
+            <Route
+              path="/commissioned/w-magazine-2019-1"
+              element={<W_Mag_2019_1 />}
+            />
+            <Route path="/commissioned/jungeunhae" element={<Jungeunhae />} />
+            <Route path="/commissioned/delta-boys" element={<Delta_Boys />} />
+            <Route
+              path="/commissioned/w-magazine-2018"
+              element={<W_Mag_2018 />}
+            />
+            <Route path="/commissioned/jung-sungil" element={<Jung_Sungil />} />
+            <Route path="/commissioned/son-yeyoung" element={<Son_Yeyoung />} />
+            <Route
+              path="/commissioned/w-magazine-2017"
+              element={<W_Mag_2017 />}
+            />
+            <Route
+              path="/commissioned/g-style-2016"
+              element={<G_Style_2016 />}
+            />
+            <Route
+              path="/commissioned/jungeunhae-eu"
+              element={<Jungeunhae_EU />}
+            />
+
             <Route path="/exhibition" element={<Exhibition />} />
             <Route path="/exhibition/kyodong-art-group" element={<Kyodong />} />
             <Route path="/exhibition/dont-skip-it" element={<Dont_Skip_It />} />
