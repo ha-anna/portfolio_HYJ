@@ -59,12 +59,10 @@ import About from "./pages/About";
 
 // CONTACT PAGE
 import Contact from "./pages/Contact";
-
 import ImageContext from "./ImageContext";
 
 function App() {
   const [clickedImg, setClickedImg] = React.useState("");
-  function saveChosenImage() {}
 
   return (
     <>

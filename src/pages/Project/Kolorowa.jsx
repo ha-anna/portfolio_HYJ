@@ -14,7 +14,7 @@ function Kolorowa() {
       key={i}
       onClick={() => setClickedImg(i)}
     >
-      <img src={`${url.match(/public\/(.*)/)[1]}`} alt="" key={i} id={`${i}`} />
+      <img src={`${url.match(/public\/(.*)/)[1]}`} alt="" key={i} />
     </Link>
   ));
 
