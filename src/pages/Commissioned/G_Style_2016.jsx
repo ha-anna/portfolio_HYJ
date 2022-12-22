@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function G_Style_2017() {
   const images = Object.keys(
-    import.meta.glob("../../../public/assets/Commissioned/G_Style_2017/*", {
+    import.meta.glob("../../../public/assets/Commissioned/G_Style_2016/*", {
       as: "raw",
     })
   );
