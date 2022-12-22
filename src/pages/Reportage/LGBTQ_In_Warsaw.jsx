@@ -1,22 +1,26 @@
-import React, { useState } from "react";
-import { Link, generatePath } from "react-router-dom";
+import React, { useContext } from "react";
+import { Link } from "react-router-dom";
+import ImageContext from "../../ImageContext";
 
 function LGBTQ_In_Warsaw() {
+  const { clickedImg, setClickedImg } = useContext(ImageContext);
   const images = Object.keys(
     import.meta.glob("../../../public/assets/Reportage/LGBTQ_In_Warsaw/*", {
       as: "raw",
     })
   );
   const imagesHtml = images.map((url, i) => (
-    <Link to={`${i + 1}`} key={i}>
-      <img src={`${url.match(/public\/(.*)/)[1]}`} alt="" key={i} id={`${i}`} />
+    <Link to={`${i + 1}`} key={i} onClick={() => setClickedImg(i)}>
+      <img src={`./${url.match(/public\/(.*)/)[1]}`} alt="" key={i} />
     </Link>
   ));
 
   return (
-    <>
-      <div className="img-grid">{imagesHtml}</div>
-    </>
+    <ImageContext.Consumer>
+      {({ clickedImg, setClickedImg }) => {
+        return <div className="img-grid">{imagesHtml}</div>;
+      }}
+    </ImageContext.Consumer>
   );
 }
 
