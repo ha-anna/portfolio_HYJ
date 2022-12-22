@@ -51,6 +51,13 @@ function ImageCarousel({ name }) {
         })
       );
       break;
+    case "Neoliberalism":
+      images = Object.keys(
+        import.meta.glob("../../public/assets/Reportage/Neoliberalism/*", {
+          as: "raw",
+        })
+      );
+      break;
     case "LGBTQ_In_Warsaw":
       images = Object.keys(
         import.meta.glob("../../public/assets/Reportage/LGBTQ_In_Warsaw/*", {
@@ -58,9 +65,9 @@ function ImageCarousel({ name }) {
         })
       );
       break;
-    case "Uprising":
+    case "8_1_Uprising":
       images = Object.keys(
-        import.meta.glob("../../public/assets/Reportage/Uprising/*", {
+        import.meta.glob("../../public/assets/Reportage/8_1_Uprising/*", {
           as: "raw",
         })
       );
