@@ -107,7 +107,7 @@ function Header() {
 
         <ul className="collapse-menu">
           <li>
-            <NavLink to="/overview" className="nav-link">
+            <NavLink to="/Overview" className="nav-link">
               Overview
             </NavLink>
           </li>
@@ -115,32 +115,32 @@ function Header() {
             Project
             <ul className="nested panel">
               <li>
-                <NavLink to="/new-galateia" className="nav-link">
+                <NavLink to="/New_Galateia" className="nav-link">
                   [New Galateia]
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/kolorowa" className="nav-link">
+                <NavLink to="/Kolorowa" className="nav-link">
                   [Kolorowa]
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/minus" className="nav-link">
+                <NavLink to="/Minus" className="nav-link">
                   [Minus]
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/concrete" className="nav-link">
+                <NavLink to="/Concrete" className="nav-link">
                   [Concrete]
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/err0r" className="nav-link">
+                <NavLink to="/Err0r" className="nav-link">
                   [Err0r]
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/living-and-gone" className="nav-link">
+                <NavLink to="/Living_And_Gone" className="nav-link">
                   [Living and gone]
                 </NavLink>
               </li>
@@ -150,59 +150,59 @@ function Header() {
             Reportage
             <ul className="nested panel">
               <li>
-                <NavLink to="/neoliberalism" className="nav-link">
+                <NavLink to="/Neoliberalism" className="nav-link">
                   [Neo-liberalism]
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/lgbtq-in-warsaw" className="nav-link">
+                <NavLink to="/LGBTQ_In_Warsaw" className="nav-link">
                   [LGBTQ in Warsaw]
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/8-1-uprising" className="nav-link">
+                <NavLink to="/8_1_Uprising" className="nav-link">
                   [8/1 Uprising]
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/independence-day" className="nav-link">
+                <NavLink to="/Independence_Day" className="nav-link">
                   [Independence day]
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/dont-look-back-in-anger" className="nav-link">
+                <NavLink to="/Dont_Look_Back_In_Anger" className="nav-link">
                   [Don't look back in anger]
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/issues" className="nav-link">
+                <NavLink to="/Issues" className="nav-link">
                   [Issues]
                 </NavLink>
               </li>
             </ul>
           </li>
           <li>
-            <NavLink to="/film" className="nav-link">
+            <NavLink to="/Film" className="nav-link">
               Film
             </NavLink>
           </li>
           <li>
-            <NavLink to="/commissioned" className="nav-link">
+            <NavLink to="/Commissioned" className="nav-link">
               Commissioned
             </NavLink>
           </li>
           <li>
-            <NavLink to="/exhibition" className="nav-link italic first">
+            <NavLink to="/Exhibition" className="nav-link italic first">
               Exhibition
             </NavLink>
           </li>
           <li>
-            <NavLink to="/about" className="nav-link italic">
+            <NavLink to="/About" className="nav-link italic">
               About
             </NavLink>
           </li>
           <li>
-            <NavLink to="/contact" className="nav-link italic last">
+            <NavLink to="/Contact" className="nav-link italic last">
               Contact
             </NavLink>
           </li>
@@ -244,7 +244,7 @@ function Header() {
 
         <ul className="menu">
           <li>
-            <NavLink to="/overview" className="nav-link">
+            <NavLink to="/Overview" className="nav-link">
               Overview
             </NavLink>
           </li>
@@ -252,32 +252,32 @@ function Header() {
             Project
             <ul className="nested panel">
               <li>
-                <NavLink to="/new-galateia" className="nav-link">
+                <NavLink to="/New_Galateia" className="nav-link">
                   [New Galateia]
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/kolorowa" className="nav-link">
+                <NavLink to="/Kolorowa" className="nav-link">
                   [Kolorowa]
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/minus" className="nav-link">
+                <NavLink to="/Minus" className="nav-link">
                   [Minus]
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/concrete" className="nav-link">
+                <NavLink to="/Concrete" className="nav-link">
                   [Concrete]
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/err0r" className="nav-link">
+                <NavLink to="/Err0r" className="nav-link">
                   [Err0r]
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/living-and-gone" className="nav-link">
+                <NavLink to="/Living_And_Gone" className="nav-link">
                   [Living and gone]
                 </NavLink>
               </li>
@@ -287,59 +287,59 @@ function Header() {
             Reportage
             <ul className="nested panel">
               <li>
-                <NavLink to="/neoliberalism" className="nav-link">
+                <NavLink to="/Neoliberalism" className="nav-link">
                   [Neo-liberalism]
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/lgbtq-in-warsaw" className="nav-link">
+                <NavLink to="/LGBTQ_In_Warsaw" className="nav-link">
                   [LGBTQ in Warsaw]
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/8-1-uprising" className="nav-link">
+                <NavLink to="/8_1_Uprising" className="nav-link">
                   [8/1 Uprising]
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/independence-day" className="nav-link">
+                <NavLink to="/Independence_Day" className="nav-link">
                   [Independence day]
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/dont-look-back-in-anger" className="nav-link">
+                <NavLink to="/Dont_Look_Back_In_Anger" className="nav-link">
                   [Don't look back in anger]
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/issues" className="nav-link">
+                <NavLink to="/Issues" className="nav-link">
                   [Issues]
                 </NavLink>
               </li>
             </ul>
           </li>
           <li>
-            <NavLink to="/film" className="nav-link">
+            <NavLink to="/Film" className="nav-link">
               Film
             </NavLink>
           </li>
           <li>
-            <NavLink to="/commissioned" className="nav-link">
+            <NavLink to="/Commissioned" className="nav-link">
               Commissioned
             </NavLink>
           </li>
           <li>
-            <NavLink to="/exhibition" className="nav-link italic first">
+            <NavLink to="/Exhibition" className="nav-link italic first">
               Exhibition
             </NavLink>
           </li>
           <li>
-            <NavLink to="/about" className="nav-link italic">
+            <NavLink to="/About" className="nav-link italic">
               About
             </NavLink>
           </li>
           <li>
-            <NavLink to="/contact" className="nav-link italic last">
+            <NavLink to="/Contact" className="nav-link italic last">
               Contact
             </NavLink>
           </li>

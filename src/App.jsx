@@ -1,13 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 
 // COMPONENTS
 import Header from "./Header";
-import ImageCarousel from "./components/ImageCarousel";
 
 // 404 PAGE
 import ErrorPage from "./pages/ErrorPage";
+import ImageView from "./pages/ImageView";
 
 // OVERVIEW PAGE
 import Overview from "./pages/Overview/Overview";
@@ -60,86 +60,103 @@ import About from "./pages/About";
 // CONTACT PAGE
 import Contact from "./pages/Contact";
 
+import ImageContext from "./ImageContext";
+
 function App() {
+  const [clickedImg, setClickedImg] = React.useState("");
+  function saveChosenImage() {}
+
   return (
     <>
       <BrowserRouter>
         <Header />
         <main>
-          <Routes>
-            <Route path="/" element={<Kolorowa />} />
-            <Route path="/overview" element={<Overview />} />
-            <Route path="/new-galateia" element={<New_Galateia />} />
-            <Route path="/kolorowa" element={<Kolorowa />} />
-            <Route path="/minus" element={<Minus />} />
-            <Route path="/concrete" element={<Concrete />} />
-            <Route path="/err0r" element={<Err0r />} />
-            <Route path="/living-and-gone" element={<Living_And_Gone />} />
-            <Route path="/neoliberalism" element={<Neoliberalism />} />
-            <Route path="/lgbtq-in-warsaw" element={<LGBTQ_In_Warsaw />} />
-            <Route path="/8-1-uprising" element={<Uprising />} />
-            <Route path="/independence-day" element={<Independence_Day />} />
-            <Route
-              path="/dont-look-back-in-anger"
-              element={<Dont_Look_Back_In_Anger />}
-            />
-            <Route path="/issues" element={<Issues />} />
-            <Route path="/film" element={<Film />} />
-            <Route
-              path="/film/subscribe-my-dream"
-              element={<Subscribe_My_Dream />}
-            />
-            <Route path="/commissioned/lee-heemoon" element={<Lee_Heemoon />} />
-            <Route
-              path="/commissioned/w-magazine-2019-2"
-              element={<W_Mag_2019_2 />}
-            />
-            <Route path="/commissioned/" element={<Commissioned />} />
-            <Route
-              path="/commissioned/cheon-jaeseung"
-              element={<Cheon_Jaeseung />}
-            />
-            <Route
-              path="/commissioned/w-magazine-2019-1"
-              element={<W_Mag_2019_1 />}
-            />
-            <Route path="/commissioned/jungeunhae" element={<Jungeunhae />} />
-            <Route path="/commissioned/delta-boys" element={<Delta_Boys />} />
-            <Route
-              path="/commissioned/w-magazine-2018"
-              element={<W_Mag_2018 />}
-            />
-            <Route path="/commissioned/jung-sungil" element={<Jung_Sungil />} />
-            <Route path="/commissioned/son-yeyoung" element={<Son_Yeyoung />} />
-            <Route
-              path="/commissioned/w-magazine-2017"
-              element={<W_Mag_2017 />}
-            />
-            <Route
-              path="/commissioned/g-style-2016"
-              element={<G_Style_2016 />}
-            />
-            <Route
-              path="/commissioned/jungeunhae-eu"
-              element={<Jungeunhae_EU />}
-            />
+          <ImageContext.Provider value={{ clickedImg, setClickedImg }}>
+            <Routes>
+              <Route path="/" element={<Kolorowa />} />
+              <Route path="/Overview" element={<Overview />} />
+              <Route path="/New_Galateia" element={<New_Galateia />} />
+              <Route path="/Kolorowa" element={<Kolorowa />} />
+              <Route path="/Minus" element={<Minus />} />
+              <Route path="/Concrete" element={<Concrete />} />
+              <Route path="/Err0r" element={<Err0r />} />
+              <Route path="/Living_And_Gone" element={<Living_And_Gone />} />
+              <Route path="/Neoliberalism" element={<Neoliberalism />} />
+              <Route path="/LGBTQ_In_Warsaw" element={<LGBTQ_In_Warsaw />} />
+              <Route path="/8_1_Uprising" element={<Uprising />} />
+              <Route path="/Independence_Day" element={<Independence_Day />} />
+              <Route
+                path="/Dont_Look_Back_In_Anger"
+                element={<Dont_Look_Back_In_Anger />}
+              />
+              <Route path="/Issues" element={<Issues />} />
+              <Route path="/Film" element={<Film />} />
+              <Route
+                path="/Film/Subscribe_My_Dream"
+                element={<Subscribe_My_Dream />}
+              />
+              <Route
+                path="/Commissioned/Lee_Heemoon"
+                element={<Lee_Heemoon />}
+              />
+              <Route
+                path="/Commissioned/W_Mag_2019_2"
+                element={<W_Mag_2019_2 />}
+              />
+              <Route path="/Commissioned/" element={<Commissioned />} />
+              <Route
+                path="/Commissioned/Cheon_Jaeseung"
+                element={<Cheon_Jaeseung />}
+              />
+              <Route
+                path="/Commissioned/W_Mag_2019_1"
+                element={<W_Mag_2019_1 />}
+              />
+              <Route path="/Commissioned/Jungeunhae" element={<Jungeunhae />} />
+              <Route path="/Commissioned/Delta_Boys" element={<Delta_Boys />} />
+              <Route path="/Commissioned/W_Mag_2018" element={<W_Mag_2018 />} />
+              <Route
+                path="/Commissioned/Jung_Sungil"
+                element={<Jung_Sungil />}
+              />
+              <Route
+                path="/Commissioned/Son_Yeyoung"
+                element={<Son_Yeyoung />}
+              />
+              <Route path="/Commissioned/W_Mag_2017" element={<W_Mag_2017 />} />
+              <Route
+                path="/Commissioned/G_Style_2016"
+                element={<G_Style_2016 />}
+              />
+              <Route
+                path="/Commissioned/Jungeunhae_EU"
+                element={<Jungeunhae_EU />}
+              />
 
-            <Route path="/exhibition" element={<Exhibition />} />
-            <Route path="/exhibition/kyodong-art-group" element={<Kyodong />} />
-            <Route path="/exhibition/dont-skip-it" element={<Dont_Skip_It />} />
-            <Route
-              path="/exhibition/photo-compilation"
-              element={<Photo_Compilation />}
-            />
-            <Route
-              path="/exhibition/kolorowa-warszawa"
-              element={<Kolorowa_Warszawa />}
-            />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/*" element={<ErrorPage />} />
-            {/* <Route path="/kolorowa/:name" element={<ImageCarousel />} /> */}
-          </Routes>
+              <Route path="/Exhibition" element={<Exhibition />} />
+              <Route
+                path="/Exhibition/Kyodong_Art_Group"
+                element={<Kyodong />}
+              />
+              <Route
+                path="/Exhibition/Dont_Skip_It"
+                element={<Dont_Skip_It />}
+              />
+              <Route
+                path="/Exhibition/Photo_Compilation"
+                element={<Photo_Compilation />}
+              />
+              <Route
+                path="/Exhibition/Kolorowa_Warszawa"
+                element={<Kolorowa_Warszawa />}
+              />
+              <Route path="/About" element={<About />} />
+              <Route path="/Contact" element={<Contact />} />
+              <Route path="/*" element={<ErrorPage />} />
+              <Route path="/:name/:id" element={<ImageView />} />
+              <Route path="/:folder/:name/:id" element={<ImageView />} />
+            </Routes>
+          </ImageContext.Provider>
         </main>
       </BrowserRouter>
     </>

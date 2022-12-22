@@ -1,11 +1,60 @@
-import React, { useEffect } from "react";
+import React, { useContext } from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import ImageContext from "../ImageContext";
 
-function ImageCarousel({ images, clickedImg }) {
+function ImageCarousel({ name }) {
+  const { clickedImg } = useContext(ImageContext);
+
+  let images;
+  switch (name) {
+    case "Kolorowa":
+      images = Object.keys(
+        import.meta.glob("../../public/assets/Project/Kolorowa/*", {
+          as: "raw",
+        })
+      );
+      break;
+    case "New_Galateia":
+      images = Object.keys(
+        import.meta.glob("../../public/assets/Project/New_Galateia/*", {
+          as: "raw",
+        })
+      );
+      break;
+    case "Minus":
+      images = Object.keys(
+        import.meta.glob("../../public/assets/Project/Minus/*", {
+          as: "raw",
+        })
+      );
+      break;
+    case "Concrete":
+      images = Object.keys(
+        import.meta.glob("../../public/assets/Project/Concrete/*", {
+          as: "raw",
+        })
+      );
+      break;
+    case "Err0r":
+      images = Object.keys(
+        import.meta.glob("../../public/assets/Project/Err0r/*", {
+          as: "raw",
+        })
+      );
+      break;
+    case "Living_And_Gone":
+      images = Object.keys(
+        import.meta.glob("../../public/assets/Project/Living_And_Gone/*", {
+          as: "raw",
+        })
+      );
+      break;
+  }
+
   const imagesCarousel = images.map((url, i) => (
     <div key={i}>
-      <img src={`./assets/${url.slice(2)}`} alt="" className="carousel-img" />
+      <img id={`${i}`} src={url} alt="" className="carousel-img" />
     </div>
   ));
 
@@ -17,13 +66,6 @@ function ImageCarousel({ images, clickedImg }) {
     height: "100%",
     opacity: "0",
   };
-
-  // useEffect(() => {
-  //   const img = document.querySelector(".slider .slide div");
-  //   console.log(img.tabIndex);
-  //   img.tabIndex = "1";
-  //   img.focus();
-  // }, []);
 
   return (
     <>

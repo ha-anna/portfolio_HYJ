@@ -12,7 +12,7 @@ function Film() {
             <br />
             꿈도 구독이 되나요
           </h3>
-          <Link to="./subscribe-my-dream" className="standard-button text-link">
+          <Link to="./Subscribe_My_Dream" className="standard-button text-link">
             SCREENING LINK
           </Link>
         </section>

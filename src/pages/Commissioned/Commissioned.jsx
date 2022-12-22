@@ -8,7 +8,7 @@ function Commissioned() {
 
       <div className="commissioned-grid">
         <div className="commissioned-card">
-          <Link to="./lee-heemoon">
+          <Link to="./Lee_Heemoon">
             <img
               src="./assets/Commissioned/lee_heemoon.webp"
               alt=""
@@ -22,7 +22,7 @@ function Commissioned() {
         </div>
 
         <div className="commissioned-card">
-          <Link to="./w-magazine-2019-2">
+          <Link to="./W_Mag_2019_2">
             <img
               src="./assets/Commissioned/w_mag_2019_2.webp"
               alt=""
@@ -36,7 +36,7 @@ function Commissioned() {
         </div>
 
         <div className="commissioned-card">
-          <Link to="./cheon-jaeseung">
+          <Link to="./Cheon_Jaeseung">
             <img
               src="./assets/Commissioned/cheon_jaeseung.webp"
               alt=""
@@ -52,7 +52,7 @@ function Commissioned() {
         <div className="border-bottom max-width"></div>
 
         <div className="commissioned-card">
-          <Link to="./w-magazine-2019-1">
+          <Link to="./W_Mag_2019_1">
             <img
               src="./assets/Commissioned/w_mag_2019_1.webp"
               alt=""
@@ -66,7 +66,7 @@ function Commissioned() {
         </div>
 
         <div className="commissioned-card">
-          <Link to="./jungeunhae">
+          <Link to="./Jungeunhae">
             <img
               src="./assets/Commissioned/jungeunhae.webp"
               alt=""
@@ -80,7 +80,7 @@ function Commissioned() {
         </div>
 
         <div className="commissioned-card">
-          <Link to="./delta-boys">
+          <Link to="./Delta_Boys">
             <img
               src="./assets/Commissioned/delta_boys.webp"
               alt=""
@@ -96,7 +96,7 @@ function Commissioned() {
         <div className="border-bottom max-width"></div>
 
         <div className="commissioned-card">
-          <Link to="./w-magazine-2018">
+          <Link to="./W_Mag_2018">
             <img
               src="./assets/Commissioned/w_mag_2018.webp"
               alt=""
@@ -110,7 +110,7 @@ function Commissioned() {
         </div>
 
         <div className="commissioned-card">
-          <Link to="./jung-sungil">
+          <Link to="./Jung_Sungil">
             <img
               src="./assets/Commissioned/jung_sungil.webp"
               alt=""
@@ -124,7 +124,7 @@ function Commissioned() {
         </div>
 
         <div className="commissioned-card">
-          <Link to="./son-yeyoung">
+          <Link to="./Son_Yeyoung">
             <img
               src="./assets/Commissioned/son_yeyoung.webp"
               alt=""
@@ -140,7 +140,7 @@ function Commissioned() {
         <div className="border-bottom max-width"></div>
 
         <div className="commissioned-card">
-          <Link to="./w-magazine-2017">
+          <Link to="./W_Mag_2017">
             <img
               src="./assets/Commissioned/w_mag_2017.webp"
               alt=""
@@ -154,7 +154,7 @@ function Commissioned() {
         </div>
 
         <div className="commissioned-card">
-          <Link to="./g-style-2016">
+          <Link to="./G_Style_2016">
             <img
               src="./assets/Commissioned/g_style_2016.webp"
               alt=""
@@ -168,7 +168,7 @@ function Commissioned() {
         </div>
 
         <div className="commissioned-card">
-          <Link to="./jungeunhae-eu">
+          <Link to="./Jungeunhae_EU">
             <img
               src="./assets/Commissioned/jungeunhae_eu.webp"
               alt=""
