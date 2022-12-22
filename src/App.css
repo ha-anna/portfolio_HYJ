@@ -188,6 +188,17 @@ li .active {
   width: 100%;
 }
 
+.error {
+  text-align: center;
+  border: 1px solid var(--border);
+  padding: 3rem;
+}
+
+.error-message {
+  margin-bottom: 3rem;
+  font-size: 1.8em;
+}
+
 /* NAVIGATION */
 
 .logo {
