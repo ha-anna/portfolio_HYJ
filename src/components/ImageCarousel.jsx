@@ -10,7 +10,7 @@ function ImageCarousel({ name }) {
   switch (name) {
     case "Kolorowa":
       images = Object.keys(
-        import.meta.glob("./../public/assets/Project/Kolorowa/*", {
+        import.meta.glob("../../public/assets/Project/Kolorowa/*", {
           as: "raw",
         })
       );
@@ -54,9 +54,16 @@ function ImageCarousel({ name }) {
 
   const imagesCarousel = images.map((url, i) => (
     <div key={i}>
-      <img id={`${i}`} src={url} alt="" className="carousel-img" />
+      <img
+        id={`${i}`}
+        src={`./../${url.match(/public\/(.*)/)[1]}`}
+        alt=""
+        className="carousel-img"
+      />
     </div>
   ));
+
+  console.log(imagesCarousel);
 
   const arrowStyles = {
     position: "absolute",
