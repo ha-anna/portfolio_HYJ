@@ -201,7 +201,7 @@ function ImageCarousel({ name }) {
         })
       );
       break;
-    case "Jungeunhae_EU":
+    case "Kolorowa_Warszawa":
       images = Object.keys(
         import.meta.glob("../../public/assets/Exhibition/Kolorowa_Warszawa/*", {
           as: "raw",
