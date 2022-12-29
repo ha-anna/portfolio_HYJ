@@ -5,7 +5,6 @@ import ImageContext from "../ImageContext";
 
 function ImageCarousel({ name }) {
   const { clickedImg } = useContext(ImageContext);
-  console.log(name);
 
   let images;
   switch (name) {
@@ -182,7 +181,7 @@ function ImageCarousel({ name }) {
       break;
     case "Kyodong_Art_Group":
       images = Object.keys(
-        import.meta.glob("../../public/assets/Exhibition/Kyodong_Art_Group/*", {
+        import.meta.glob("../../public/assets/Exhibition/Kyodong/*", {
           as: "raw",
         })
       );
@@ -214,7 +213,7 @@ function ImageCarousel({ name }) {
     <div key={i}>
       <img
         id={`${i}`}
-        src={`./../${url.match(/public\/(.*)/)[1]}`}
+        src={`/${url.match(/public\/(.*)/)[1]}`}
         alt=""
         className="carousel-img"
       />

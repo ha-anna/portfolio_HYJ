@@ -9,7 +9,10 @@ function ImageView() {
   return (
     <>
       <ImageCarousel name={name} />
-      <button onClick={() => navigate(-1)} className="standard-button">
+      <button
+        onClick={() => navigate(-1)}
+        className="standard-button margin-top"
+      >
         Go back one page
       </button>
     </>

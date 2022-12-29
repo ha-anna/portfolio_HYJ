@@ -8,7 +8,7 @@ function Exhibition() {
 
       <div className="exhibition-grid">
         <div className="exhibition-card">
-          <Link to="./kyodong-art-group">
+          <Link to="./Kyodong_Art_Group">
             <img
               src="./assets/Exhibition/1-4.webp"
               alt="KYODONG ART GROUP poster"
@@ -27,7 +27,7 @@ function Exhibition() {
         </div>
 
         <div className="exhibition-card">
-          <Link to="./dont-skip-it">
+          <Link to="./Dont_Skip_It">
             <img
               src="./assets/Exhibition/1-2.webp"
               alt="KYODONG ART GROUP poster"
@@ -48,7 +48,7 @@ function Exhibition() {
         </div>
 
         <div className="exhibition-card">
-          <Link to="./photo-compilation">
+          <Link to="./Photo_Compilation">
             <img
               src="./assets/Exhibition/1-1.webp"
               alt="PHOTO COMPILATION poster"
@@ -67,7 +67,7 @@ function Exhibition() {
         </div>
 
         <div className="exhibition-card">
-          <Link to="./kolorowa-warszawa">
+          <Link to="./Kolorowa_Warszawa">
             <img
               src="./assets/Exhibition/1-3.webp"
               alt="KOLOROWA WARSZAWA poster"
