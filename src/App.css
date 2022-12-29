@@ -410,7 +410,7 @@ li .active:before {
 
 .commissioned-grid {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -428,6 +428,7 @@ li .active:before {
   width: 100%;
   height: auto;
   transition: transform ease-in-out 200ms;
+  max-width: 500px;
 }
 
 .commissioned-image:hover {
