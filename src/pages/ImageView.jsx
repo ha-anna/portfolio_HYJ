@@ -9,6 +9,9 @@ function ImageView() {
   return (
     <>
       <ImageCarousel name={name} />
+      <p className="description margin-top">
+        You can swipe or hover over the photo to click through the gallery.
+      </p>
       <button
         onClick={() => navigate(-1)}
         className="standard-button margin-top"
