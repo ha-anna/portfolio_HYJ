@@ -344,9 +344,18 @@ li .active:before {
 }
 
 .film-card {
-  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.film-card .title-section {
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
 }
 
 .film-card.video {
@@ -356,7 +365,6 @@ li .active:before {
 }
 
 .film-card h3 {
-  margin-bottom: 2rem;
   margin-right: 2rem;
   white-space: nowrap;
 }
@@ -661,6 +669,18 @@ li .active:before {
     height: 100% !important;
     width: 100% !important;
     aspect-ratio: 16/9;
+  }
+
+  .film-card {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .film-card .title-section {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    width: min-content;
   }
 
   .film-title-section {

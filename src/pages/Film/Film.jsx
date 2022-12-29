@@ -6,7 +6,7 @@ function Film() {
     <div className="film">
       <h2 className="page-title border-bottom">Film</h2>
       <article className="film-card">
-        <section>
+        <section className="title-section">
           <h3>
             Subscribe my dream
             <br />
