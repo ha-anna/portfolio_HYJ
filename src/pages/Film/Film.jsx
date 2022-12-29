@@ -17,7 +17,7 @@ function Film() {
           </Link>
         </section>
         <img
-          src="./assets/Exhibition/Dont_Skip_It/1-0.webp"
+          src="./assets/Exhibition/Dont_Skip_It/1-1.webp"
           alt="Subscribe My Dream poster"
           className="film-img"
         />
