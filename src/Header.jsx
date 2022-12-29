@@ -41,8 +41,8 @@ function Header() {
       }, 200);
     } else {
       menu.style.maxHeight = menu.scrollHeight + 500 + "px";
-      menu.style.borderBottom = "2px solid var(--text)";
-      menu.style.borderTop = "2px solid var(--text)";
+      menu.style.borderBottom = "1px solid var(--border)";
+      menu.style.borderTop = "1px solid var(--border)";
       menu.style.padding = "1rem 0";
       menu.style.opacity = "1";
       menu.style.marginBottom = "1rem";
