@@ -68,7 +68,7 @@ function App() {
     <>
       <BrowserRouter>
         <Header />
-        <main>
+        <main id="contents">
           <ImageContext.Provider value={{ clickedImg, setClickedImg }}>
             <Routes>
               <Route path="/" element={<Kolorowa />} />

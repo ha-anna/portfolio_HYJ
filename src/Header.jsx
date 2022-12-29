@@ -49,6 +49,11 @@ function Header() {
     }
   }
 
+  function scrollDown() {
+    const main = document.getElementById("contents");
+    window.scrollTo(0, main.offsetTop);
+  }
+
   return (
     <header>
       <nav className="mobile-nav">
@@ -107,7 +112,7 @@ function Header() {
 
         <ul className="collapse-menu">
           <li>
-            <NavLink to="/Overview" className="nav-link">
+            <NavLink to="/Overview" className="nav-link" onClick={scrollDown}>
               Overview
             </NavLink>
           </li>
@@ -115,32 +120,48 @@ function Header() {
             Project
             <ul className="nested panel">
               <li>
-                <NavLink to="/New_Galateia" className="nav-link">
+                <NavLink
+                  to="/New_Galateia"
+                  className="nav-link"
+                  onClick={scrollDown}
+                >
                   [New Galateia]
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/Kolorowa" className="nav-link">
+                <NavLink
+                  to="/Kolorowa"
+                  className="nav-link"
+                  onClick={scrollDown}
+                >
                   [Kolorowa]
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/Minus" className="nav-link">
+                <NavLink to="/Minus" className="nav-link" onClick={scrollDown}>
                   [Minus]
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/Concrete" className="nav-link">
+                <NavLink
+                  to="/Concrete"
+                  className="nav-link"
+                  onClick={scrollDown}
+                >
                   [Concrete]
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/Err0r" className="nav-link">
+                <NavLink to="/Err0r" className="nav-link" onClick={scrollDown}>
                   [Err0r]
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/Living_And_Gone" className="nav-link">
+                <NavLink
+                  to="/Living_And_Gone"
+                  className="nav-link"
+                  onClick={scrollDown}
+                >
                   [Living and gone]
                 </NavLink>
               </li>
@@ -150,59 +171,95 @@ function Header() {
             Reportage
             <ul className="nested panel">
               <li>
-                <NavLink to="/Neoliberalism" className="nav-link">
+                <NavLink
+                  to="/Neoliberalism"
+                  className="nav-link"
+                  onClick={scrollDown}
+                >
                   [Neo-liberalism]
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/LGBTQ_In_Warsaw" className="nav-link">
+                <NavLink
+                  to="/LGBTQ_In_Warsaw"
+                  className="nav-link"
+                  onClick={scrollDown}
+                >
                   [LGBTQ in Warsaw]
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/8_1_Uprising" className="nav-link">
+                <NavLink
+                  to="/8_1_Uprising"
+                  className="nav-link"
+                  onClick={scrollDown}
+                >
                   [8/1 Uprising]
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/Independence_Day" className="nav-link">
+                <NavLink
+                  to="/Independence_Day"
+                  className="nav-link"
+                  onClick={scrollDown}
+                >
                   [Independence day]
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/Dont_Look_Back_In_Anger" className="nav-link">
+                <NavLink
+                  to="/Dont_Look_Back_In_Anger"
+                  className="nav-link"
+                  onClick={scrollDown}
+                >
                   [Don't look back in anger]
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/Issues" className="nav-link">
+                <NavLink to="/Issues" className="nav-link" onClick={scrollDown}>
                   [Issues]
                 </NavLink>
               </li>
             </ul>
           </li>
           <li>
-            <NavLink to="/Film" className="nav-link">
+            <NavLink to="/Film" className="nav-link" onClick={scrollDown}>
               Film
             </NavLink>
           </li>
           <li>
-            <NavLink to="/Commissioned" className="nav-link">
+            <NavLink
+              to="/Commissioned"
+              className="nav-link"
+              onClick={scrollDown}
+            >
               Commissioned
             </NavLink>
           </li>
           <li>
-            <NavLink to="/Exhibition" className="nav-link italic first">
+            <NavLink
+              to="/Exhibition"
+              className="nav-link italic first"
+              onClick={scrollDown}
+            >
               Exhibition
             </NavLink>
           </li>
           <li>
-            <NavLink to="/About" className="nav-link italic">
+            <NavLink
+              to="/About"
+              className="nav-link italic"
+              onClick={scrollDown}
+            >
               About
             </NavLink>
           </li>
           <li>
-            <NavLink to="/Contact" className="nav-link italic last">
+            <NavLink
+              to="/Contact"
+              className="nav-link italic last"
+              onClick={scrollDown}
+            >
               Contact
             </NavLink>
           </li>
