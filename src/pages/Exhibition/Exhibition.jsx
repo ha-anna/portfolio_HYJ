@@ -47,6 +47,8 @@ function Exhibition() {
           </p>
         </div>
 
+        <div className="border-bottom max-width"></div>
+
         <div className="exhibition-card">
           <Link to="./Photo_Compilation">
             <img

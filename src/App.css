@@ -416,8 +416,8 @@ li .active:before {
 
 .commissioned-card {
   border-bottom: 1px solid var(--border);
-  margin-bottom: 1rem;
   padding: 1rem;
+  padding-bottom: 0.5rem;
 }
 
 .commissioned .border-bottom {
@@ -443,16 +443,20 @@ li .active:before {
 
 .exhibition-grid {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
-
 }
 
 .exhibition-card {
   padding: 1rem;
-  max-width: 50%;
-  display: flex;
-  flex-flow: column nowrap;
+  padding-bottom: 0.5rem;
+  max-width: 500px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 1rem;
+}
+
+.exhibition .border-bottom {
+  display: none;
 }
 
 .exhibition-image {
@@ -633,8 +637,17 @@ li .active:before {
     margin-bottom: 0;
   }
 
-  .commissioned .border-bottom {
+  .commissioned .border-bottom,
+  .exhibition .border-bottom {
     display: block;
+  }
+
+  .exhibition-card {
+    border-bottom: none;
+    margin-bottom: 0;
+    max-width: 50%;
+    display: flex;
+    flex-flow: column nowrap;
   }
 }
 
