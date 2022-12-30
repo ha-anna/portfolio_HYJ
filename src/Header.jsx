@@ -58,7 +58,11 @@ function Header() {
     <header>
       <nav className="mobile-nav">
         <NavLink to="/" className="logo-link">
-          <img src="./assets/logo.webp" alt="" className="logo" />
+          <img
+            src="./assets/logo.webp"
+            alt="Ha Youjun's homepage"
+            className="logo"
+          />
         </NavLink>
 
         <button
@@ -268,7 +272,8 @@ function Header() {
               href="https://www.facebook.com/youjun.ha"
               className="icon nav-link"
             >
-              <svg width="32" height="32" viewBox="0 0 24 24">
+              <svg width="32" height="32" viewBox="0 0 24 24" role="img">
+                <title id="facebook-logo-mobile">Facebook link</title>
                 <path
                   fill="currentColor"
                   d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01Z"
@@ -280,8 +285,10 @@ function Header() {
             <a
               href="https://www.instagram.com/studio_siseon"
               className="icon nav-link"
+              alt="Instagram"
             >
-              <svg width="32" height="34" viewBox="0 0 24 24">
+              <svg width="32" height="34" viewBox="0 0 24 24" role="img">
+                <title id="instagram-logo-mobile">Instagram link</title>
                 <path
                   fill="currentColor"
                   fillRule="evenodd"
@@ -296,7 +303,11 @@ function Header() {
 
       <nav className="desktop-nav">
         <NavLink to="/" className="logo-link">
-          <img src="./assets/logo.webp" alt="" className="logo" />
+          <img
+            src="./assets/logo.webp"
+            alt="Ha Youjun's homepage"
+            className="logo"
+          />
         </NavLink>
 
         <ul className="menu">
@@ -405,7 +416,8 @@ function Header() {
               href="https://www.facebook.com/youjun.ha"
               className="icon nav-link"
             >
-              <svg width="32" height="32" viewBox="0 0 24 24">
+              <svg width="32" height="32" viewBox="0 0 24 24" role="img">
+                <title id="facebook-logo-desktop">Facebook link</title>
                 <path
                   fill="currentColor"
                   d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01Z"
@@ -418,7 +430,8 @@ function Header() {
               href="https://www.instagram.com/studio_siseon/"
               className="icon nav-link"
             >
-              <svg width="32" height="34" viewBox="0 0 24 24">
+              <svg width="32" height="34" viewBox="0 0 24 24" role="img">
+                <title id="instagram-logo-desktop">Instagram link</title>
                 <path
                   fill="currentColor"
                   fillRule="evenodd"
