@@ -326,15 +326,22 @@ li .active:before {
 }
 
 .img-grid img {
-  transition: opacity 0.25s ease-in-out;
+  transition: opacity 0.25s ease-in-out, transform ease-in-out 200ms;
   max-width: 100%;
   width: 100%;
-  margin-bottom: 15px;
   cursor: pointer;
 }
 
-.img-grid img:hover {
+.img-grid img:hover,
+.img-grid img:active {
   opacity: .9;
+  transform: scale(0.99);
+}
+
+.img-grid a {
+  display: block;
+  margin-bottom: 15px;
+  line-height: 0;
 }
 
 /* FILM */
