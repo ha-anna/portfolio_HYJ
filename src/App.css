@@ -204,6 +204,11 @@ li .active {
 
 /* NAVIGATION */
 
+.logo-link {
+  line-height: 0;
+  display: block;
+}
+
 .logo {
   width: 100%;
   max-width: 60px;
@@ -603,7 +608,6 @@ li .active:before {
 
   .logo {
     max-width: unset;
-    width: 150px;
   }
 
   .img-grid {

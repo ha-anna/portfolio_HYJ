@@ -57,7 +57,7 @@ function Header() {
   return (
     <header>
       <nav className="mobile-nav">
-        <NavLink to="/">
+        <NavLink to="/" className="logo-link">
           <img src="./assets/logo.webp" alt="" className="logo" />
         </NavLink>
 
@@ -295,7 +295,7 @@ function Header() {
       </nav>
 
       <nav className="desktop-nav">
-        <NavLink to="/">
+        <NavLink to="/" className="logo-link">
           <img src="./assets/logo.webp" alt="" className="logo" />
         </NavLink>
 
