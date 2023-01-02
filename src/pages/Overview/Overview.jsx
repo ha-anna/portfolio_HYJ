@@ -2,27 +2,29 @@ import React from "react";
 import ImageCarouselWithArrows from "../../components/ImageCarouselWithArrows";
 
 function Overview() {
+  const sortAlphaNum = (a, b) => a.localeCompare(b, "en", { numeric: true });
+
   const imagesNewGalateia = Object.keys(
     import.meta.glob("../../../public/assets/Project/New_Galateia/*", {
       as: "raw",
     })
-  );
+  ).sort(sortAlphaNum);
 
   const imagesKolorowa = Object.keys(
     import.meta.glob("../../../public/assets/Project/Kolorowa/*", { as: "raw" })
-  );
+  ).sort(sortAlphaNum);
 
   const imagesMinus = Object.keys(
     import.meta.glob("../../../public/assets/Project/Minus/*", { as: "raw" })
-  );
+  ).sort(sortAlphaNum);
 
   const imagesConcrete = Object.keys(
     import.meta.glob("../../../public/assets/Project/Concrete/*", { as: "raw" })
-  );
+  ).sort(sortAlphaNum);
 
   const imagesErr0r = Object.keys(
     import.meta.glob("../../../public/assets/Project/Err0r/*", { as: "raw" })
-  );
+  ).sort(sortAlphaNum);
 
   return (
     <div className="overview">

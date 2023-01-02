@@ -324,10 +324,9 @@ li .active:before {
 
 /* PHOTO GALLERY */
 
-.img-grid {
-  column-count: 1;
-  column-gap: 20px;
-  padding: 1rem;
+.grid-image {
+  max-width: 100%;
+  height: auto;
 }
 
 .img-grid img {
@@ -623,10 +622,6 @@ li .active:before {
 }
 
 @media (min-width:1000px) {
-  .img-grid {
-    column-count: 2;
-    column-gap: 20px;
-  }
 
   .overview-project-text {
     flex-flow: row nowrap;
@@ -712,22 +707,22 @@ li .active:before {
 
 @media (min-width:1600px) {
   .img-grid {
-    column-count: 3;
-    column-gap: 20px;
+    /* column-count: 3;
+    column-gap: 20px; */
   }
 }
 
 @media (min-width:2200px) {
   .img-grid {
-    column-count: 4;
-    column-gap: 20px;
+    /* column-count: 4;
+    column-gap: 20px; */
   }
 }
 
 @media (min-width:2500px) {
   .img-grid {
-    column-count: 5;
-    column-gap: 20px;
+    /* column-count: 5;
+    column-gap: 20px; */
   }
 }
 

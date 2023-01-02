@@ -5,6 +5,7 @@ import ImageContext from "../ImageContext";
 
 function ImageCarousel({ name }) {
   const { clickedImg } = useContext(ImageContext);
+  const sortAlphaNum = (a, b) => a.localeCompare(b, "en", { numeric: true });
 
   let images;
   switch (name) {
@@ -13,70 +14,70 @@ function ImageCarousel({ name }) {
         import.meta.glob("../../public/assets/Project/Kolorowa/*", {
           as: "raw",
         })
-      );
+      ).sort(sortAlphaNum);
       break;
     case "New_Galateia":
       images = Object.keys(
         import.meta.glob("../../public/assets/Project/New_Galateia/*", {
           as: "raw",
         })
-      );
+      ).sort(sortAlphaNum);
       break;
     case "Minus":
       images = Object.keys(
         import.meta.glob("../../public/assets/Project/Minus/*", {
           as: "raw",
         })
-      );
+      ).sort(sortAlphaNum);
       break;
     case "Concrete":
       images = Object.keys(
         import.meta.glob("../../public/assets/Project/Concrete/*", {
           as: "raw",
         })
-      );
+      ).sort(sortAlphaNum);
       break;
     case "Err0r":
       images = Object.keys(
         import.meta.glob("../../public/assets/Project/Err0r/*", {
           as: "raw",
         })
-      );
+      ).sort(sortAlphaNum);
       break;
     case "Living_And_Gone":
       images = Object.keys(
         import.meta.glob("../../public/assets/Project/Living_And_Gone/*", {
           as: "raw",
         })
-      );
+      ).sort(sortAlphaNum);
       break;
     case "Neoliberalism":
       images = Object.keys(
         import.meta.glob("../../public/assets/Reportage/Neoliberalism/*", {
           as: "raw",
         })
-      );
+      ).sort(sortAlphaNum);
       break;
     case "LGBTQ_In_Warsaw":
       images = Object.keys(
         import.meta.glob("../../public/assets/Reportage/LGBTQ_In_Warsaw/*", {
           as: "raw",
         })
-      );
+      ).sort(sortAlphaNum);
       break;
     case "8_1_Uprising":
       images = Object.keys(
         import.meta.glob("../../public/assets/Reportage/8_1_Uprising/*", {
           as: "raw",
         })
-      );
+      ).sort(sortAlphaNum);
       break;
     case "Independence_Day":
       images = Object.keys(
         import.meta.glob("../../public/assets/Reportage/Independence_Day/*", {
           as: "raw",
         })
-      );
+      ).sort(sortAlphaNum);
       break;
     case "Dont_Look_Back_In_Anger":
       images = Object.keys(
@@ -86,126 +87,126 @@ function ImageCarousel({ name }) {
             as: "raw",
           }
         )
-      );
+      ).sort(sortAlphaNum);
       break;
     case "Issues":
       images = Object.keys(
         import.meta.glob("../../public/assets/Reportage/Issues/*", {
           as: "raw",
         })
-      );
+      ).sort(sortAlphaNum);
       break;
     case "Lee_Heemoon":
       images = Object.keys(
         import.meta.glob("../../public/assets/Commissioned/Lee_Heemoon/*", {
           as: "raw",
         })
-      );
+      ).sort(sortAlphaNum);
       break;
     case "W_Mag_2019_2":
       images = Object.keys(
         import.meta.glob("../../public/assets/Commissioned/W_Mag_2019_2/*", {
           as: "raw",
         })
-      );
+      ).sort(sortAlphaNum);
       break;
     case "Cheon_Jaeseung":
       images = Object.keys(
         import.meta.glob("../../public/assets/Commissioned/Cheon_Jaeseung/*", {
           as: "raw",
         })
-      );
+      ).sort(sortAlphaNum);
       break;
     case "W_Mag_2019_1":
       images = Object.keys(
         import.meta.glob("../../public/assets/Commissioned/W_Mag_2019_1/*", {
           as: "raw",
         })
-      );
+      ).sort(sortAlphaNum);
       break;
     case "Jungeunhae":
       images = Object.keys(
         import.meta.glob("../../public/assets/Commissioned/Jungeunhae/*", {
           as: "raw",
         })
-      );
+      ).sort(sortAlphaNum);
       break;
     case "Delta_Boys":
       images = Object.keys(
         import.meta.glob("../../public/assets/Commissioned/Delta_Boys/*", {
           as: "raw",
         })
-      );
+      ).sort(sortAlphaNum);
       break;
     case "W_Mag_2018":
       images = Object.keys(
         import.meta.glob("../../public/assets/Commissioned/W_Mag_2018/*", {
           as: "raw",
         })
-      );
+      ).sort(sortAlphaNum);
       break;
     case "Jung_Sungil":
       images = Object.keys(
         import.meta.glob("../../public/assets/Commissioned/Jung_Sungil/*", {
           as: "raw",
         })
-      );
+      ).sort(sortAlphaNum);
       break;
     case "Son_Yeyoung":
       images = Object.keys(
         import.meta.glob("../../public/assets/Commissioned/Son_Yeyoung/*", {
           as: "raw",
         })
-      );
+      ).sort(sortAlphaNum);
       break;
     case "W_Mag_2017":
       images = Object.keys(
         import.meta.glob("../../public/assets/Commissioned/W_Mag_2017/*", {
           as: "raw",
         })
-      );
+      ).sort(sortAlphaNum);
       break;
     case "G_Style_2016":
       images = Object.keys(
         import.meta.glob("../../public/assets/Commissioned/G_Style_2016/*", {
           as: "raw",
         })
-      );
+      ).sort(sortAlphaNum);
       break;
     case "Jungeunhae_EU":
       images = Object.keys(
         import.meta.glob("../../public/assets/Commissioned/Jungeunhae_EU/*", {
           as: "raw",
         })
-      );
+      ).sort(sortAlphaNum);
       break;
     case "Kyodong_Art_Group":
       images = Object.keys(
         import.meta.glob("../../public/assets/Exhibition/Kyodong/*", {
           as: "raw",
         })
-      );
+      ).sort(sortAlphaNum);
       break;
     case "Dont_Skip_It":
       images = Object.keys(
         import.meta.glob("../../public/assets/Exhibition/Dont_Skip_It/*", {
           as: "raw",
         })
-      );
+      ).sort(sortAlphaNum);
       break;
     case "Photo_Compilation":
       images = Object.keys(
         import.meta.glob("../../public/assets/Exhibition/Photo_Compilation/*", {
           as: "raw",
         })
-      );
+      ).sort(sortAlphaNum);
       break;
     case "Kolorowa_Warszawa":
       images = Object.keys(
         import.meta.glob("../../public/assets/Exhibition/Kolorowa_Warszawa/*", {
           as: "raw",
         })
-      );
+      ).sort(sortAlphaNum);
       break;
   }
 
