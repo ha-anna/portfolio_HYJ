@@ -9,7 +9,7 @@ function Dont_Skip_It() {
   tabTitle("Don't Skip It");
 
   const images = Object.keys(
-    import.meta.glob("../../../public/assets/Exhibition/Dont_Skip_it/*", {
+    import.meta.glob("../../../public/assets/Exhibition/Dont_Skip_It/*", {
       as: "raw",
     })
   ).sort(sortAlphaNum);
