@@ -1,7 +1,9 @@
 import React from "react";
 import emailjs from "@emailjs/browser";
+import { tabTitle } from "../Utils/tabTitle";
 
 function Contact() {
+  tabTitle("Contact");
   const [formData, setFormData] = React.useState(
     JSON.parse(localStorage.getItem("message")) || {
       firstName: "",

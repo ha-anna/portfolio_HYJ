@@ -1,9 +1,10 @@
 import React from "react";
 import ImageCarouselWithArrows from "../../components/ImageCarouselWithArrows";
+import { sortAlphaNum } from "../../Utils/sortAlphaNum";
+import { tabTitle } from "../../Utils/tabTitle";
 
 function Overview() {
-  const sortAlphaNum = (a, b) => a.localeCompare(b, "en", { numeric: true });
-
+  tabTitle("Overview");
   const imagesNewGalateia = Object.keys(
     import.meta.glob("../../../public/assets/Project/New_Galateia/*", {
       as: "raw",

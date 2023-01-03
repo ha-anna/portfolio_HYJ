@@ -1,7 +1,9 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { tabTitle } from "../Utils/tabTitle";
 
 function ErrorPage() {
+  tabTitle("Error");
   const navigate = useNavigate();
 
   return (

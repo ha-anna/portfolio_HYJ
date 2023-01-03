@@ -1,6 +1,8 @@
 import React from "react";
+import { tabTitle } from "../Utils/tabTitle";
 
 function About() {
+  tabTitle("About");
   return (
     <div className="about">
       <h2 className="page-title border-bottom">About</h2>

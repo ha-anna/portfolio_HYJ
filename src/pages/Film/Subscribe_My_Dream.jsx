@@ -1,6 +1,8 @@
 import React from "react";
+import { tabTitle } from "../../Utils/tabTitle";
 
 function Subscribe_My_Dream() {
+  tabTitle("Subscribe My Dream");
   return (
     <div className="film">
       <h2 className="page-title border-bottom">Subscribe My Dream</h2>

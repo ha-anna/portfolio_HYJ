@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { tabTitle } from "../../Utils/tabTitle";
 
 function Exhibition() {
+  tabTitle("Exhibition");
   return (
     <div className="exhibition">
       <h2 className="page-title border-bottom">Exhibition</h2>

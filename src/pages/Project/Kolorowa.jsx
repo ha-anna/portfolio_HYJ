@@ -1,12 +1,13 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 import ImageContext from "../../ImageContext";
 import { Masonry } from "masonic";
+import { sortAlphaNum } from "../../Utils/sortAlphaNum";
+import { tabTitle } from "../../Utils/tabTitle";
 
 function Kolorowa() {
+  tabTitle("Kolorowa");
   const { clickedImg, setClickedImg } = useContext(ImageContext);
-
-  const sortAlphaNum = (a, b) => a.localeCompare(b, "en", { numeric: true });
 
   const images = Object.keys(
     import.meta.glob("../../../public/assets/Project/Kolorowa/*", { as: "raw" })
@@ -39,7 +40,7 @@ function Kolorowa() {
         return (
           <Masonry
             items={items}
-            columnWidth={350}
+            columnWidth={400}
             maxColumnCount={5}
             columnGutter={15}
             rowGutter={10}
