@@ -321,7 +321,6 @@ li .active:before {
   max-width: 800px;
 }
 
-
 /* PHOTO GALLERY */
 
 .grid-image {
@@ -344,7 +343,6 @@ li .active:before {
 
 .img-grid a {
   display: block;
-  margin-bottom: 15px;
   line-height: 0;
 }
 

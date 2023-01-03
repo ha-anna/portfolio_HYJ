@@ -44,6 +44,7 @@ function Kolorowa() {
             columnGutter={15}
             rowGutter={10}
             render={card}
+            className="img-grid"
           ></Masonry>
         );
       }}
