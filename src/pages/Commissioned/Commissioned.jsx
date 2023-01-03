@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { tabTitle } from "../../Utils/tabTitle";
 
 function Commissioned() {
+  tabTitle("Commissioned");
   return (
     <div className="commissioned">
       <h2 className="page-title border-bottom">Commissioned</h2>

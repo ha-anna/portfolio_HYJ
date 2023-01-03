@@ -1,24 +1,54 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import ImageContext from "../../ImageContext";
+import { Masonry } from "masonic";
+import { sortAlphaNum } from "../../Utils/sortAlphaNum";
+import { tabTitle } from "../../Utils/tabTitle";
 
 function Jungeunhae_EU() {
+  tabTitle("Jung Eunhae's European Tour");
   const { clickedImg, setClickedImg } = useContext(ImageContext);
   const images = Object.keys(
     import.meta.glob("../../../public/assets/Commissioned/Jungeunhae_EU/*", {
       as: "raw",
     })
-  );
-  const imagesHtml = images.map((url, i) => (
-    <Link to={`${i + 1}`} key={i} onClick={() => setClickedImg(i)}>
-      <img src={`/${url.match(/public\/(.*)/)[1]}`} alt="" key={i} />
+  ).sort(sortAlphaNum);
+
+  const items = images.map((item, i) => {
+    return {
+      src: item,
+      index: i,
+    };
+  });
+
+  const card = ({ data: { src, index } }) => (
+    <Link
+      to={`${src.match(`[^/]*$`)}`}
+      key={index}
+      onClick={() => setClickedImg(index)}
+    >
+      <img
+        src={`/${src.match(/public\/(.*)/)[1]}`}
+        alt=""
+        className="grid-image"
+      />
     </Link>
-  ));
+  );
 
   return (
     <ImageContext.Consumer>
       {({ clickedImg, setClickedImg }) => {
-        return <div className="img-grid">{imagesHtml}</div>;
+        return (
+          <Masonry
+            items={items}
+            columnWidth={400}
+            maxColumnCount={5}
+            columnGutter={15}
+            rowGutter={10}
+            render={card}
+            className="img-grid"
+          ></Masonry>
+        );
       }}
     </ImageContext.Consumer>
   );

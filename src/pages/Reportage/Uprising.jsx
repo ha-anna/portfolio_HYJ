@@ -1,6 +1,9 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import ImageContext from "../../ImageContext";
+import { Masonry } from "masonic";
+import { sortAlphaNum } from "../../Utils/sortAlphaNum";
+import { tabTitle } from "../../Utils/tabTitle";
 
 function Uprising() {
   const { clickedImg, setClickedImg } = useContext(ImageContext);
