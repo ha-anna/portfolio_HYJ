@@ -4,36 +4,19 @@ import ImageContext from "../../ImageContext";
 import { Masonry } from "masonic";
 import { sortAlphaNum } from "../../Utils/sortAlphaNum";
 import { tabTitle } from "../../Utils/tabTitle";
+import { getCards, getItems } from "../../Utils/grid";
 
 function Neoliberalism() {
   tabTitle("Neoliberalism");
-  const { clickedImg, setClickedImg } = useContext(ImageContext);
+
   const images = Object.keys(
     import.meta.glob("../../../public/assets/Reportage/Neoliberalism/*", {
       as: "raw",
     })
   ).sort(sortAlphaNum);
 
-  const items = images.map((item, i) => {
-    return {
-      src: item,
-      index: i,
-    };
-  });
-
-  const card = ({ data: { src, index } }) => (
-    <Link
-      to={`${src.match(`[^/]*$`)}`}
-      key={index}
-      onClick={() => setClickedImg(index)}
-    >
-      <img
-        src={`${src.match(/public\/(.*)/)[1]}`}
-        alt=""
-        className="grid-image"
-      />
-    </Link>
-  );
+  const cards = getCards();
+  const items = getItems(images);
 
   return (
     <ImageContext.Consumer>
@@ -45,7 +28,7 @@ function Neoliberalism() {
             maxColumnCount={5}
             columnGutter={15}
             rowGutter={10}
-            render={card}
+            render={cards}
             className="img-grid"
           ></Masonry>
         );

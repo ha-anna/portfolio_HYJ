@@ -1,13 +1,13 @@
-import React, { useContext } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
 import ImageContext from "../../ImageContext";
 import { Masonry } from "masonic";
 import { sortAlphaNum } from "../../Utils/sortAlphaNum";
 import { tabTitle } from "../../Utils/tabTitle";
+import { getCards, getItems } from "../../Utils/grid";
 
 function Dont_Look_Back_In_Anger() {
   tabTitle("Don't Look Back In Anger");
-  const { clickedImg, setClickedImg } = useContext(ImageContext);
+
   const images = Object.keys(
     import.meta.glob(
       "../../../public/assets/Reportage/Dont_Look_Back_In_Anger/*",
@@ -15,26 +15,8 @@ function Dont_Look_Back_In_Anger() {
     )
   ).sort(sortAlphaNum);
 
-  const items = images.map((item, i) => {
-    return {
-      src: item,
-      index: i,
-    };
-  });
-
-  const card = ({ data: { src, index } }) => (
-    <Link
-      to={`${src.match(`[^/]*$`)}`}
-      key={index}
-      onClick={() => setClickedImg(index)}
-    >
-      <img
-        src={`${src.match(/public\/(.*)/)[1]}`}
-        alt=""
-        className="grid-image"
-      />
-    </Link>
-  );
+  const cards = getCards();
+  const items = getItems(images);
 
   return (
     <ImageContext.Consumer>
@@ -46,7 +28,7 @@ function Dont_Look_Back_In_Anger() {
             maxColumnCount={5}
             columnGutter={15}
             rowGutter={10}
-            render={card}
+            render={cards}
             className="img-grid"
           ></Masonry>
         );
