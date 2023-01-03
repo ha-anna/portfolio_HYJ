@@ -1,9 +1,10 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import ImageContext from "../../ImageContext";
 import { Masonry } from "masonic";
 import { sortAlphaNum } from "../../Utils/sortAlphaNum";
 import { tabTitle } from "../../Utils/tabTitle";
+import { getItems } from "../../Utils/grid";
 
 function Kolorowa() {
   tabTitle("Kolorowa");
@@ -13,12 +14,7 @@ function Kolorowa() {
     import.meta.glob("../../../public/assets/Project/Kolorowa/*", { as: "raw" })
   ).sort(sortAlphaNum);
 
-  const items = images.map((item, i) => {
-    return {
-      src: item,
-      index: i,
-    };
-  });
+  const items = getItems(images);
 
   const card = ({ data: { src, index } }) => (
     <Link
