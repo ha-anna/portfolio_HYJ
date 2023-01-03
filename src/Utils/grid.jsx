@@ -22,7 +22,7 @@ export function getCards() {
       onClick={() => setClickedImg(index)}
     >
       <img
-        src={`${src.match(/public\/(.*)/)[1]}`}
+        src={`/${src.match(/public\/(.*)/)[1]}`}
         alt=""
         className="grid-image"
       />
