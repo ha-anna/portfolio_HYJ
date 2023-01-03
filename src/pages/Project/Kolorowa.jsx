@@ -8,11 +8,11 @@ function Kolorowa() {
 
   const sortAlphaNum = (a, b) => a.localeCompare(b, "en", { numeric: true });
 
-  const items = Object.keys(
+  const images = Object.keys(
     import.meta.glob("../../../public/assets/Project/Kolorowa/*", { as: "raw" })
   ).sort(sortAlphaNum);
 
-  const items2 = items.map((item, i) => {
+  const items = images.map((item, i) => {
     return {
       src: item,
       index: i,
@@ -38,21 +38,17 @@ function Kolorowa() {
       {({ clickedImg, setClickedImg }) => {
         return (
           <Masonry
-            items={items2}
-            columnWidth={400}
+            items={items}
+            columnWidth={350}
             maxColumnCount={5}
-            columnGutter={20}
-            rowGutter={20}
+            columnGutter={15}
+            rowGutter={10}
             render={card}
           ></Masonry>
         );
       }}
     </ImageContext.Consumer>
-    // <p>hi</p>
   );
 }
 
 export default Kolorowa;
-{
-  /* <div className="img-grid">{imagesHtml}</div>; */
-}
