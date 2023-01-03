@@ -16,6 +16,8 @@ function Dont_Skip_It() {
 
   const cards = getCards();
   const items = getItems(images);
+  console.log(items);
+  console.log(cards);
 
   return (
     <ImageContext.Consumer>
