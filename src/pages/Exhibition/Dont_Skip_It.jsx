@@ -19,7 +19,7 @@ function Dont_Skip_It() {
 
   return (
     <ImageContext.Consumer>
-      {({ clickedImg, setClickedImg }) => {
+      {() => {
         return (
           <Masonry
             items={items}

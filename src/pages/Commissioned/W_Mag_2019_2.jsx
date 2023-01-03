@@ -19,7 +19,7 @@ function W_Mag_2019_2() {
 
   return (
     <ImageContext.Consumer>
-      {({ clickedImg, setClickedImg }) => {
+      {() => {
         return (
           <Masonry
             items={items}
@@ -35,4 +35,5 @@ function W_Mag_2019_2() {
     </ImageContext.Consumer>
   );
 }
+
 export default W_Mag_2019_2;

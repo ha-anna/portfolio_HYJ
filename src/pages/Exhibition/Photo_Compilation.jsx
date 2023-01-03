@@ -18,7 +18,7 @@ function Photo_Compilation() {
 
   return (
     <ImageContext.Consumer>
-      {({ clickedImg, setClickedImg }) => {
+      {() => {
         return (
           <Masonry
             items={items}

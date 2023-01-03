@@ -19,7 +19,7 @@ function W_Mag_2017() {
 
   return (
     <ImageContext.Consumer>
-      {({ clickedImg, setClickedImg }) => {
+      {() => {
         return (
           <Masonry
             items={items}

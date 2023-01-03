@@ -20,7 +20,7 @@ function Dont_Look_Back_In_Anger() {
 
   return (
     <ImageContext.Consumer>
-      {({ clickedImg, setClickedImg }) => {
+      {() => {
         return (
           <Masonry
             items={items}

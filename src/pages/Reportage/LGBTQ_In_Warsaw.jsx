@@ -19,7 +19,7 @@ function LGBTQ_In_Warsaw() {
 
   return (
     <ImageContext.Consumer>
-      {({ clickedImg, setClickedImg }) => {
+      {() => {
         return (
           <Masonry
             items={items}

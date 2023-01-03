@@ -16,7 +16,7 @@ function Kolorowa() {
 
   const items = getItems(images);
 
-  const card = ({ data: { src, index } }) => (
+  const cards = ({ data: { src, index } }) => (
     <Link
       to={`Kolorowa/${src.match(`[^/]*$`)}`}
       key={index}
@@ -32,7 +32,7 @@ function Kolorowa() {
 
   return (
     <ImageContext.Consumer>
-      {({ clickedImg, setClickedImg }) => {
+      {() => {
         return (
           <Masonry
             items={items}
@@ -40,7 +40,7 @@ function Kolorowa() {
             maxColumnCount={5}
             columnGutter={15}
             rowGutter={10}
-            render={card}
+            render={cards}
             className="img-grid"
           ></Masonry>
         );
