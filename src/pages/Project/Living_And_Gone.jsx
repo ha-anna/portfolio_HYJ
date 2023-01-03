@@ -1,5 +1,4 @@
-import React, { useContext } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
 import ImageContext from "../../ImageContext";
 import { Masonry } from "masonic";
 import { sortAlphaNum } from "../../Utils/sortAlphaNum";
@@ -8,7 +7,7 @@ import { getCards, getItems } from "../../Utils/grid";
 
 function Living_And_Gone() {
   tabTitle("Living and Gone");
-  const { clickedImg, setClickedImg } = useContext(ImageContext);
+
   const images = Object.keys(
     import.meta.glob("../../../public/assets/Project/Living_And_Gone/*", {
       as: "raw",
