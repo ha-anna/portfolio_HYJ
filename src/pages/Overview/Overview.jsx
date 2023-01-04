@@ -32,9 +32,12 @@ function Overview() {
       <h2 className="page-title border-bottom">Project Overview</h2>
 
       <article className="project border-bottom">
-        <ImageCarouselWithArrows images={imagesNewGalateia} />
+        <ImageCarouselWithArrows
+          images={imagesNewGalateia}
+          data-aos="fade-up"
+        />
 
-        <section className="overview-project-text">
+        <section className="overview-project-text" data-aos="fade-up">
           <section className="text-eng">
             <h3>NEW GALATEIA (2019)</h3>
             <p>
@@ -103,9 +106,9 @@ function Overview() {
         </section>
       </article>
 
-      <article className="project border-bottom">
-        <ImageCarouselWithArrows images={imagesKolorowa} />
-        <section className="overview-project-text">
+      <article className="project border-bottom" data-aos="fade-up">
+        <ImageCarouselWithArrows images={imagesKolorowa} data-aos="fade-up" />
+        <section className="overview-project-text" data-aos="fade-up">
           <section className="text-eng">
             <h3>KOLOROWA (2018-ONGOING)</h3>
             <p>
@@ -142,9 +145,9 @@ function Overview() {
         </section>
       </article>
 
-      <article className="project border-bottom">
-        <ImageCarouselWithArrows images={imagesMinus} />
-        <section className="overview-project-text">
+      <article className="project border-bottom" data-aos="fade-up">
+        <ImageCarouselWithArrows images={imagesMinus} data-aos="fade-up" />
+        <section className="overview-project-text" data-aos="fade-up">
           <section className="text-eng">
             <h3>MINUS (2018)</h3>
             <p>
@@ -216,15 +219,16 @@ function Overview() {
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
+          data-aos="fade-up"
         ></iframe>
-        <p className="text-eng">
+        <p className="text-eng" data-aos="fade-up">
           ART MAGAZINE ‘ABOUT FAMILY’ PHOTOWORKS BY HA YOUJUN ‘MINUS’
         </p>
       </article>
 
-      <article className="project border-bottom">
-        <ImageCarouselWithArrows images={imagesConcrete} />
-        <section className="overview-project-text">
+      <article className="project border-bottom" data-aos="fade-up">
+        <ImageCarouselWithArrows images={imagesConcrete} data-aos="fade-up" />
+        <section className="overview-project-text" data-aos="fade-up">
           <section className="text-eng">
             <h3>CONCRETE (2017) </h3>
             <p>
@@ -261,15 +265,16 @@ function Overview() {
           frameBorder="0"
           allow=""
           allowFullScreen
+          data-aos="fade-up"
         ></iframe>
-        <p className="text-eng">
+        <p className="text-eng" data-aos="fade-up">
           ART MAGAZINE ‘ABOUT PLACE’, PHOTOWORKS BY HA YOUJUN ‘CONCRETE’
         </p>
       </article>
 
-      <article className="project border-bottom">
-        <ImageCarouselWithArrows images={imagesErr0r} />
-        <section className="text-kr single ">
+      <article className="project border-bottom" data-aos="fade-up">
+        <ImageCarouselWithArrows images={imagesErr0r} data-aos="fade-up" />
+        <section className="text-kr single " data-aos="fade-up">
           <h3>ERR0R (2015)</h3>
           <p>
             인간은 실수를 한다. '인간미'있다는 말은 가끔 완벽하지 않고

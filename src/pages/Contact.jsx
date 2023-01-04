@@ -59,6 +59,7 @@ function Contact() {
         ref={form}
         onSubmit={handleSubmit}
         className="contact-form border-bottom"
+        data-aos="fade-up"
       >
         <label htmlFor="first-name">
           First Name
@@ -101,7 +102,7 @@ function Contact() {
         </label>
         <button className="standard-button margin-top-1">Submit</button>
       </form>
-      <div className="address">
+      <div className="address" data-aos="fade-up">
         <span className="bold-big">STUDIO SISEON</span>
         <address>
           aleja Niepodległości 76/78 <br /> Warszawa, mazowieckie, 02-607

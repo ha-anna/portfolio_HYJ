@@ -10,7 +10,7 @@ function Commissioned() {
       <h2 className="page-title border-bottom">Commissioned</h2>
 
       <div className="commissioned-grid">
-        <div className="commissioned-card">
+        <div className="commissioned-card" data-aos="fade-up">
           <Link to="./Lee_Heemoon">
             <img
               src="./assets/Commissioned/lee_heemoon.webp"
@@ -24,7 +24,7 @@ function Commissioned() {
           </span>
         </div>
 
-        <div className="commissioned-card">
+        <div className="commissioned-card" data-aos="fade-up">
           <Link to="./W_Mag_2019_2">
             <img
               src="./assets/Commissioned/w_mag_2019_2.webp"
@@ -38,7 +38,7 @@ function Commissioned() {
           </span>
         </div>
 
-        <div className="commissioned-card">
+        <div className="commissioned-card" data-aos="fade-up">
           <Link to="./Cheon_Jaeseung">
             <img
               src="./assets/Commissioned/cheon_jaeseung.webp"
@@ -52,9 +52,9 @@ function Commissioned() {
           </span>
         </div>
 
-        <div className="border-bottom max-width"></div>
+        <div className="border-bottom max-width" data-aos="fade-up"></div>
 
-        <div className="commissioned-card">
+        <div className="commissioned-card" data-aos="fade-up">
           <Link to="./W_Mag_2019_1">
             <img
               src="./assets/Commissioned/w_mag_2019_1.webp"
@@ -68,7 +68,7 @@ function Commissioned() {
           </span>
         </div>
 
-        <div className="commissioned-card">
+        <div className="commissioned-card" data-aos="fade-up">
           <Link to="./Jungeunhae">
             <img
               src="./assets/Commissioned/jungeunhae.webp"
@@ -82,7 +82,7 @@ function Commissioned() {
           </span>
         </div>
 
-        <div className="commissioned-card">
+        <div className="commissioned-card" data-aos="fade-up">
           <Link to="./Delta_Boys">
             <img
               src="./assets/Commissioned/delta_boys.webp"
@@ -96,9 +96,9 @@ function Commissioned() {
           </span>
         </div>
 
-        <div className="border-bottom max-width"></div>
+        <div className="border-bottom max-width" data-aos="fade-up"></div>
 
-        <div className="commissioned-card">
+        <div className="commissioned-card" data-aos="fade-up">
           <Link to="./W_Mag_2018">
             <img
               src="./assets/Commissioned/w_mag_2018.webp"
@@ -112,7 +112,7 @@ function Commissioned() {
           </span>
         </div>
 
-        <div className="commissioned-card">
+        <div className="commissioned-card" data-aos="fade-up">
           <Link to="./Jung_Sungil">
             <img
               src="./assets/Commissioned/jung_sungil.webp"
@@ -126,7 +126,7 @@ function Commissioned() {
           </span>
         </div>
 
-        <div className="commissioned-card">
+        <div className="commissioned-card" data-aos="fade-up">
           <Link to="./Son_Yeyoung">
             <img
               src="./assets/Commissioned/son_yeyoung.webp"
@@ -140,9 +140,9 @@ function Commissioned() {
           </span>
         </div>
 
-        <div className="border-bottom max-width"></div>
+        <div className="border-bottom max-width" data-aos="fade-up"></div>
 
-        <div className="commissioned-card">
+        <div className="commissioned-card" data-aos="fade-up">
           <Link to="./W_Mag_2017">
             <img
               src="./assets/Commissioned/w_mag_2017.webp"
@@ -156,7 +156,7 @@ function Commissioned() {
           </span>
         </div>
 
-        <div className="commissioned-card">
+        <div className="commissioned-card" data-aos="fade-up">
           <Link to="./G_Style_2016">
             <img
               src="./assets/Commissioned/g_style_2016.webp"
@@ -170,7 +170,7 @@ function Commissioned() {
           </span>
         </div>
 
-        <div className="commissioned-card">
+        <div className="commissioned-card" data-aos="fade-up">
           <Link to="./Jungeunhae_EU">
             <img
               src="./assets/Commissioned/jungeunhae_eu.webp"

@@ -6,14 +6,14 @@ function About() {
   return (
     <div className="about">
       <h2 className="page-title border-bottom">About</h2>
-      <p className="text-eng single">
+      <p className="text-eng single" data-aos="fade-up">
         Ha You-jun was born in 1991 in Seoul, South Korea. He majored in
         Cultural Studies and Film at Kyung Hee University. After his studies, he
         devoted several years to a self-founded art group named ABOUT KO. ABOUT
         KO is an artist collective with an aim to create artworks based on
         cultural keywords important for Korean society (zeitgeist).
       </p>
-      <p className="text-eng single">
+      <p className="text-eng single" data-aos="fade-up">
         One of the ABOUT KO achievements was publishing their own art magazines,
         titled ABOUT Place (2017) and ABOUT Family (2018). He also worked as a
         Military Correspondent in a combat media content team in The Republic of
@@ -22,7 +22,7 @@ function About() {
         special duties and extensive military exercises like the Key Resolve,
         the UFG (Ulchi Freedom Guardian).
       </p>
-      <p className="text-eng single border-bottom">
+      <p className="text-eng single border-bottom" data-aos="fade-up">
         He moves back and forth between Seoul and Warsaw, Poland, which has many
         similarities in the historical background of Korean society and gives
         inspiration to the new objects. He opened two solo shows.
@@ -37,7 +37,7 @@ function About() {
         displayed the artworks; the photo collage artworks the symmetrical
         beauty of the modern and tradition in Suwon city.
       </p>
-      <div className="about-links">
+      <div className="about-links" data-aos="fade-up">
         <a
           className="standard-button text-link"
           href="./assets/PDF/HA+YOUJUN+BIO.pdf"

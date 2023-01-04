@@ -26,6 +26,7 @@ function Kolorowa() {
         src={`${src.match(/public\/(.*)/)[1]}`}
         alt=""
         className="grid-image"
+        data-aos="fade-up"
       />
     </Link>
   );

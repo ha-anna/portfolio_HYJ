@@ -25,6 +25,8 @@ export function getCards() {
         src={`/${src.match(/public\/(.*)/)[1]}`}
         alt=""
         className="grid-image"
+        loading="lazy"
+        data-aos="fade-up"
       />
     </Link>
   );

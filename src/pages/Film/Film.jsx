@@ -7,7 +7,7 @@ function Film() {
   return (
     <div className="film">
       <h2 className="page-title border-bottom">Film</h2>
-      <article className="film-card">
+      <article className="film-card" data-aos="fade-up">
         <section className="title-section">
           <h3>
             Subscribe my dream
@@ -35,7 +35,7 @@ function Film() {
       </article>
       <div className="border-bottom"></div> */}
 
-      <article className="film-card video">
+      <article className="film-card video" data-aos="fade-up">
         <section className="film-title-section">
           <h3>
             Next Town SOUND

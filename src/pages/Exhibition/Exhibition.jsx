@@ -9,7 +9,7 @@ function Exhibition() {
       <h2 className="page-title border-bottom">Exhibition</h2>
 
       <div className="exhibition-grid">
-        <div className="exhibition-card">
+        <div className="exhibition-card" data-aos="fade-up">
           <Link to="./Kyodong_Art_Group">
             <img
               src="./assets/Exhibition/1-4.webp"
@@ -28,7 +28,7 @@ function Exhibition() {
           </p>
         </div>
 
-        <div className="exhibition-card">
+        <div className="exhibition-card" data-aos="fade-up">
           <Link to="./Dont_Skip_It">
             <img
               src="./assets/Exhibition/1-2.webp"
@@ -49,9 +49,9 @@ function Exhibition() {
           </p>
         </div>
 
-        <div className="border-bottom max-width"></div>
+        <div className="border-bottom max-width" data-aos="fade-up"></div>
 
-        <div className="exhibition-card">
+        <div className="exhibition-card" data-aos="fade-up">
           <Link to="./Photo_Compilation">
             <img
               src="./assets/Exhibition/1-1.webp"
@@ -70,7 +70,7 @@ function Exhibition() {
           </p>
         </div>
 
-        <div className="exhibition-card">
+        <div className="exhibition-card" data-aos="fade-up">
           <Link to="./Kolorowa_Warszawa">
             <img
               src="./assets/Exhibition/1-3.webp"

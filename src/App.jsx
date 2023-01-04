@@ -1,5 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import "./App.css";
 
 // COMPONENTS
@@ -63,6 +65,7 @@ import ImageContext from "./ImageContext";
 
 function App() {
   const [clickedImg, setClickedImg] = React.useState("");
+  Aos.init();
 
   return (
     <>
