@@ -20,6 +20,7 @@ export function getCards() {
       to={`${src.match(`[^/]*$`)}`}
       key={index}
       onClick={() => setClickedImg(index)}
+      aria-label="See the bigger version of the photo"
     >
       <img
         src={`/${src.match(/public\/(.*)/)[1]}`}

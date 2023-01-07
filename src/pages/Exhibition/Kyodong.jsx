@@ -1,9 +1,9 @@
 import React from "react";
 import ImageContext from "../../ImageContext";
-import { Masonry } from "masonic";
 import { sortAlphaNum } from "../../Utils/sortAlphaNum";
 import { tabTitle } from "../../Utils/tabTitle";
 import { getCards, getItems } from "../../Utils/grid";
+import ImageGrid from "../../components/ImageGrid";
 
 function Kyodong() {
   tabTitle("Kyodong Art Group");
@@ -30,15 +30,7 @@ function Kyodong() {
               data-aos="fade-up"
               className="video-big"
             ></iframe>
-            <Masonry
-              items={items}
-              columnWidth={400}
-              maxColumnCount={5}
-              columnGutter={15}
-              rowGutter={10}
-              render={cards}
-              className="img-grid"
-            ></Masonry>
+            <ImageGrid items={items} cards={cards} />
           </>
         );
       }}
