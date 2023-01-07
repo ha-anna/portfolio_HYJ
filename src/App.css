@@ -323,6 +323,11 @@ li .active:before {
 
 /* PHOTO GALLERY */
 
+.img-grid {
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+
 .grid-image {
   max-width: 100%;
   height: auto;
@@ -777,7 +782,6 @@ div .carousel-img {
   margin: 0;
   padding: 0;
 }
-
 
 li.slide {
   display: flex;

@@ -21,13 +21,13 @@ export function getCards() {
       key={index}
       onClick={() => setClickedImg(index)}
       aria-label="See the bigger version of the photo"
+      data-aos="fade-up"
     >
       <img
         src={`/${src.match(/public\/(.*)/)[1]}`}
         alt=""
         className="grid-image"
         loading="lazy"
-        data-aos="fade-up"
       />
     </Link>
   );
