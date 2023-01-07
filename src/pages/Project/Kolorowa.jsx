@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import ImageContext from "../../ImageContext";
-import { Masonry } from "masonic";
+import ImageGrid from "../../components/ImageGrid";
 import { sortAlphaNum } from "../../Utils/sortAlphaNum";
 import { tabTitle } from "../../Utils/tabTitle";
 import { getItems } from "../../Utils/grid";
@@ -34,17 +34,7 @@ function Kolorowa() {
   return (
     <ImageContext.Consumer>
       {() => {
-        return (
-          <Masonry
-            items={items}
-            columnWidth={400}
-            maxColumnCount={5}
-            columnGutter={15}
-            rowGutter={10}
-            render={cards}
-            className="img-grid"
-          ></Masonry>
-        );
+        return <ImageGrid items={items} cards={cards} />;
       }}
     </ImageContext.Consumer>
   );
