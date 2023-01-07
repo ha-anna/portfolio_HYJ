@@ -3,7 +3,7 @@ import { Masonry } from "masonic";
 
 function ImageGrid({ items, cards }) {
   useEffect(() => {
-    const myTimeout = setTimeout(() => {
+    const opacityTimeout = setTimeout(() => {
       const grid = document.getElementById("img-grid");
       grid.style.opacity = "1";
     }, 300);
