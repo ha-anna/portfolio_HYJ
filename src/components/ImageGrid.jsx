@@ -1,9 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { Masonry } from "masonic";
 
 function ImageGrid({ items, cards }) {
-  const [loading, setLoading] = useState(true);
-
   useEffect(() => {
     const myTimeout = setTimeout(() => {
       const grid = document.getElementById("img-grid");
