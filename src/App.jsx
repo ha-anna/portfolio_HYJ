@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Routes, HashRouter } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import "./App.css";
@@ -69,7 +69,7 @@ function App() {
 
   return (
     <>
-      <HashRouter>
+      <BrowserRouter>
         <Header />
         <main id="contents">
           <ImageContext.Provider value={{ clickedImg, setClickedImg }}>
@@ -159,7 +159,7 @@ function App() {
             </Routes>
           </ImageContext.Provider>
         </main>
-      </HashRouter>
+      </BrowserRouter>
     </>
   );
 }
